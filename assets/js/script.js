@@ -340,17 +340,6 @@
         });
     }
 
-
-
-    // progreebar
-    // $('.5-Star').rProgressbar({
-    //     percentage: 85,
-    //     // fillBackgroundColor: '#2C98F0',
-    //     // backgroundColor: '#EEEEEE',
-    //     // borderRadius: '100px',
-    //     duration: 2000
-    // });
-
     $('.progress-line').each(function () {
         var percentage = $(this).data('percentage'); // Get from data-percentage
 
@@ -359,6 +348,35 @@
             duration: 2000
         });
     });
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const stars = document.querySelectorAll(".rate-stat li");
+        const ratingLabel = document.getElementById("rating-label");
+
+        const starLabels = {
+            1: "Terrible",
+            2: "Poor",
+            3: "Good",
+            4: "Very Good",
+            5: "Excellent"
+        };
+
+        stars.forEach((star, index) => {
+            star.addEventListener("click", () => {
+                // Remove active class from all
+                stars.forEach(s => s.classList.remove("active"));
+                // Add to selected
+                for (let i = 0; i <= index; i++) {
+                    stars[i].classList.add("active");
+                }
+
+                const selectedStar = star.getAttribute("data-star");
+                ratingLabel.textContent = starLabels[selectedStar] || "Select a rating";
+            });
+        });
+    });
+
 
 
 

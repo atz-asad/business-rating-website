@@ -325,6 +325,116 @@
 /*--------------------------------
 /  Create-Review-Area
 /--------------------------------*/
+.create-review-area .business-card-v3 {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 14px;
+}
+.create-review-area .business-card-v3 .product-image {
+  position: relative;
+}
+.create-review-area .business-card-v3 .author i {
+  margin-inline-end: 5px;
+}
+.create-review-area .business-card-v3 .product-logo {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  margin-inline-start: 24px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.create-review-area .business-card-v3 .product-logo .verify {
+  position: absolute;
+  right: -11px;
+  bottom: -3px;
+}
+.create-review-area .business-card-v3 .product-logo .verify i {
+  color: #3E4FE6;
+  font-size: 21px;
+}
+.create-review-area .create-review-sidebar {
+  position: sticky;
+  top: 130px;
+}
+.create-review-area .review-submit-item {
+  margin-bottom: 20px;
+}
+.create-review-area .review-submit-area {
+  border-right: 2px solid rgba(var(--bs-primary-rgb), 0.48);
+  padding-right: 60px;
+  margin-right: 60px;
+}
+.create-review-area .review-submit-area .review-submit-item {
+  margin-bottom: 20px;
+}
+.create-review-area .review-submit-area label {
+  margin-bottom: 6px;
+  display: block;
+}
+.create-review-area .review-submit-area .form-control {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+.create-review-area .review-submit-area .form-control:focus {
+  border: 1px solid var(--bs-primary);
+}
+.create-review-area .review-submit-area .form-control::placeholder {
+  color: var(--bs-body-color);
+}
+.create-review-area .review-submit-area textarea {
+  height: 140px;
+  resize: vertical;
+}
+.create-review-area .review-submit-area select {
+  border: 1px solid #ccc;
+}
+.create-review-area .review-submit-area .form-check-input {
+  border-color: #ccc;
+}
+.create-review-area .review-submit-area .select2-container--default .select2-selection--single {
+  height: 46px;
+  line-height: 46px;
+  border-color: #ccc;
+}
+.create-review-area .review-submit-area .char-count {
+  font-size: 13px;
+  color: #666;
+}
+.create-review-area .review-submit-area .rate-stat-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.create-review-area .review-submit-area .rate-stat {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin: 0px;
+}
+.create-review-area .review-submit-area .rate-stat li {
+  height: 40px;
+  width: 40px;
+  background: #eee;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: orange;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.create-review-area .review-submit-area .rate-stat li:hover, .create-review-area .review-submit-area .rate-stat li.active {
+  background-color: orange;
+  color: #fff;
+}
+
 /* create-review-area End */
 /* socialMediaModal */
 .socialMediaModal .socialMediaModal_list {
@@ -1070,6 +1180,7 @@
   background-color: #fff;
   padding: 40px 25px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px dashed var(--bs-primary);
 }
 
 /*# sourceMappingURL=inner-page.css.map */
