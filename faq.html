@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Business Rating Website">
+        <title>Business || Blog</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/all.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css">
+        <!-- icomoon -->
+        <link rel="stylesheet" href="assets/css/icomoon/style.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+        <!-- Aos animate css -->
+        <link rel="stylesheet" href="assets/css/vendor/aos.min.css">
+        <!-- Nice-select -->
+        <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+        <!-- magnific Popup -->
+        <link rel="stylesheet" href="assets/css/vendor/magnific-popup.min.css">
+        <!-- select2 -->
+        <link rel="stylesheet" href="assets/css/vendor/select2.min.css">
+        <!-- progreesbar -->
+        <link rel="stylesheet" href="assets/css/vendor/progressbar/jquery.rprogessbar.min.css">
+        <!-- bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/inner-page.css">
+
+    </head>
+
+    <body>
+
+        <!-- pages -->
+        <div class="pages">
+
+            <!-- Start preloader  -->
+            <div class="preloader">
+                <div class="preloader-content">
+                    <div class="img">
+                        <img src="assets/images/looder.gif" alt="looder">
+                    </div>
+                </div>
+            </div>
+            <!-- End preloader  -->
+
+            <!--========= Start Header =========-->
+            <header class="header-area border-bottom">
+                <nav class="navbar navbar-expand-xl hover-menu">
+                    <div class="container">
+                        <!-- Logo -->
+                        <a class="navbar-brand m-0" href="index.html">
+                            <img class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                        <button class="menu-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobilemenu-offcanvas" aria-controls="mobilemenu-offcanvas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse d-xl-block d-none" id="main_nav">
+                            <!-- Header menu -->
+                            <ul id="mainMenu" class="navbar-nav justify-content-center ms-auto gap-24">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+
+                                        <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                        <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                                        <li><a class="dropdown-item" href="404.html">404 page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- Header Buttons -->
+                            <div class="header-right ms-auto">
+
+                                <div class="language">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <select class="niceselect nice-select">
+                                        <option value="1">En</option>
+                                        <option value="2">Ar</option>
+                                        <option value="3">Bn</option>
+                                    </select>
+                                </div>
+
+                                <div class="item">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-light fa-user-group"></i> Sign In
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- navbar-collapse.// -->
+                    </div> <!-- container.// -->
+                </nav>
+            </header>
+            <!--========= End Header ==========-->
+
+            <!-- Start Mobile-menu -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+                id="mobilemenu-offcanvas">
+                <div class="offcanvas-header align-items-center justify-content-between px-20 pt-20">
+                    <a class="navbar-brand" href="index.html">
+                        <img width="150" class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                    </a>
+                    <a href="#" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    <nav id="mobileMenu" class="mobile-menu mb-40">
+
+                    </nav>
+
+                    <!-- menu-action-item-wrapper -->
+                    <div class="menu-action-item-wrapper">
+                        <div class="menu-action-item">
+                            <a href="javascript:void(0)">
+                                <span class="icon">
+                                    <i class="fal fa-globe"></i>
+                                </span>
+                                English
+                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+                            </a>
+                            <ul class="setting-dropdown">
+                                <li>
+                                    <a class="menu-link" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Bangla</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Hindi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-action-item">
+                            <a href="javascript:void(0)">
+                                <span class="icon">
+                                    <i class="fa-light fa-user-circle"></i>
+                                </span>
+                                Sign In
+                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+                            </a>
+                            <ul class="setting-dropdown">
+                                <li>
+                                    <a class="menu-link" href="signin.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="signup.html">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mobile-menu -->
+
+            <!-- Start breadcrumb section -->
+            <div class="section-breadcrumb pt-lg-90 pb-lg-90 pt-40 pb-40 header-next bg-cover bg-img"
+                data-bg-image="assets/images/hero/breadcrumb-bg-1.jpg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs-content text-center">
+                                <h2 class="mb-14">Blog</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End breadcrumb section -->
+
+            <!-- Start faq section -->
+            <section class="section-faq pt-120 pb-120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="section-title text-center mb-60">
+                                <h2 class="title">Frequently Asked Questions</h2>
+                                <p class="text px-lg-120">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="accordion accordion-v2 mb-40" id="faqAccordion">
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span>01:</span>What is All Listing app?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">To list your car, simply create an account on our website,
+                                                provide accurate vehicle information, upload high-quality photos, and
+                                                set an appropriate price.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            <span>02:</span>How to Purchase this App ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">Yes, you can list multiple cars using a single account. Just
+                                                follow the same listing process for each vehicle.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapsethree"
+                                            aria-expanded="true" aria-controls="collapsethree">
+                                            <span>03:</span>How do I Make a Premium User?
+                                        </button>
+                                    </h2>
+                                    <div id="collapsethree" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">We offer both free and premium listing options. Basic
+                                                listings are free, while premium options may include enhanced visibility
+                                                and additional features for a fee.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                            aria-expanded="true" aria-controls="collapsefour">
+                                            <span>04:</span>How to Debug this App?
+                                        </button>
+                                    </h2>
+                                    <div id="collapsefour" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">It's important to provide detailed information such as the
+                                                make, model, year, mileage, condition, features, and any history of
+                                                accidents or repairs. The more details you provide, the better your
+                                                chances of attracting potential buyers..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapsefive"
+                                            aria-expanded="true" aria-controls="collapsefive">
+                                            <span>05:</span>Can I make an Appointment?
+                                        </button>
+                                    </h2>
+                                    <div id="collapsefive" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">The duration of your car listing depends on the type of
+                                                listing you choose. Free listings usually have a standard duration,
+                                                while premium listings may have extended visibility periods.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="true"
+                                            aria-controls="collapsesix">
+                                            <span>06:</span>What's the Business Policies?
+                                        </button>
+                                    </h2>
+                                    <div id="collapsesix" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">Yes, you can edit your listing at any time. Log in to your
+                                                account, access your listing, and make the necessary changes to the
+                                                details, price, or images</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- accordion-item -->
+                                <div class="accordion-item border mb-20">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button fw-medium collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseseven"
+                                            aria-expanded="true" aria-controls="collapseseven">
+                                            <span>07:</span>What's the Business Policies?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseseven" class="accordion-collapse collapse"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-0">Interested buyers can contact you through the contact
+                                                information you provide in your listing. We recommend using our secure
+                                                messaging system to maintain privacy and security during negotiations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End section -->
+
+            <!-- ========= Start Footer ========= -->
+            <footer class="footer border-top pt-60 bg-cover bg-img" data-bg-image="assets/images/footer/footer-bg.jpg">
+                <div class="container">
+                    <div class="footer-top pb-30">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="100">
+                                    <!-- logo -->
+                                    <div class="footer-logo mb-24">
+                                        <a href="index.html">
+                                            <img class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                                        </a>
+                                    </div>
+                                    <p class="fw-medium mb-20">Sed ut perspiciatis unde omnis istecioeio natusioe error
+                                        sit voluptatem accusa ntium abboasr doloremque lauda.</p>
+
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <a href="#">
+                                            <img class="lazyload blur-up" src="assets/images/app-store.png"
+                                                alt="app-store">
+                                        </a>
+                                        <a href="#">
+                                            <img class="lazyload blur-up" src="assets/images/google-play.png"
+                                                alt="google-play">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="150">
+                                    <h5 class="mb-24 fw-semibold">Useful Links</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">Download App</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Registration</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Services</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Privacy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="200">
+                                    <h5 class="mb-24 fw-semibold">Categories</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">Graphics Design</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Programming</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Digital Marketing</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Music & Audio</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="200">
+                                    <h5 class="mb-24 fw-semibold">explore</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">About Us</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Our Mission</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">How It Work</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="300">
+                                    <h5 class="mb-24 fw-semibold">Email Subscribtion</h5>
+                                    <div class="footer-subscribe-widget mb-24">
+                                        <form>
+                                            <div class="subscribe-group-btn subscribe">
+                                                <input type="email" name="email" placeholder="Email here">
+                                                <button class="subscribe-btn" type="button">SUBSCRIBE</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="socials">
+                                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright border-top">
+                    <div class="go-top">
+                        <i class="fa-regular fa-angles-up"></i>
+                    </div>
+                    <!-- footer-copyright -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="copyright-content">
+                                    <p class="fw-medium small text-center mb-0">
+                                        © <span class="dynamic-year"></span>
+                                        TrustPro - Business Rating Website . All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- ========= End Footer ========= -->
+
+        </div><!-- End pages -->
+
+        <!-- jQuery Js -->
+        <script src="assets/js/jquery-min.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <!-- swiper -->
+        <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+        <!-- nice-select -->
+        <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+        <!-- jquery-ui -->
+        <script src="assets/js/vendor/jquery-ui.min.js"></script>
+        <!-- Aos js -->
+        <script src="assets/js/vendor/aos.min.js"></script>
+        <!-- lazy Image -->
+        <script src="assets/js/vendor/lazy.image.js"></script>
+        <!-- lazy Image -->
+        <script src="assets/js/vendor/lazysizes.min.js"></script>
+        <!-- magnific popup -->
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <!-- mouse hover tab -->
+        <script src="assets/js/vendor/mouse-hover-move.js"></script>
+        <!-- select2 -->
+        <script src="assets/js/vendor/select2.min.js"></script>
+        <!-- progressbar -->
+        <script src="assets/js/vendor/progressbar/jQuery.rProgressbar.min.js"></script>
+        <script src="assets/js/vendor/progressbar/jquery.waypoints.js"></script>
+        <!-- header-menu JS -->
+        <script src="assets/js/header-menu.js"></script>
+        <!-- custom -->
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>

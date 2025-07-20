@@ -1,0 +1,58 @@
+/*
+************
+*************************
+
+Template Name: Business Rating Website
+Author: kreativdev
+Author URI: https://themeforest.net/user/kreativdev
+Description: Business Rating Website is service HTML template.
+Tags: event, booking, ticket, management, responsive, html5, css3, creative, modern, conference, concert,workshop, registration, event planning, organizer, landing page, template.
+Version: 1.0.0
+-----------------------------------------------------------------------------------
+
+>>> TABLE OF CONTENTS:
+=================== 
+01. variable css
+02. lazyload css
+03. spacer css
+04. typography css
+05. button css
+06. form css
+07. header css
+08. hero css
+09. category css
+10. product css
+11. banner css
+12. footer css
+
+
+******************************************************* 
+*************************************************************** */
+
+@import "base/variable";
+@import "base/lazyload";
+@import "base/spacer";
+@import "base/typography";
+@import "base/button.scss";
+@import "base/form.scss";
+@import "base/niceselect.scss";
+@import "base/select2.scss";
+@import "base/pagination.scss";
+@import "base/tabnav.scss";
+@import "base/accordion.scss";
+@import "base/custom-animation.scss";
+
+
+
+@import "header/header";
+
+@import "layout/hero";
+@import "layout/category";
+@import "layout/product";
+@import "layout/banner";
+@import "layout/cta";
+@import "layout/testiomonial";
+@import "layout/pricing";
+
+@import "layout/footer";
+@import "layout/preloder";

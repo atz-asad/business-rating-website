@@ -1,0 +1,27 @@
+/*====================== */
+/*====== preloader ======*/
+/*====================== */
+
+.preloader.hidden{
+    visibility: hidden; 
+    opacity: 0; 
+    // transition: all 0.3s 1s ease-out;
+}
+
+.preloader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: visible;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    background: var(--bs-body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+

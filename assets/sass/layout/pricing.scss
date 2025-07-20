@@ -1,0 +1,220 @@
+/*---------------------------*/
+/*---------- Pricing  -------*/
+/*-------------------------*/
+
+.pricing-tab {
+  background: rgba(var(--bs-primary-rgb), 0.5);
+  max-width: 500px;
+  padding: 12px 16px;
+  border-radius: 35px;
+}
+
+.pricing-tab .nav-tabs .nav-item {
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.pricing-tab .nav-tabs .nav-link {
+  border-radius: 35px;
+  background: var(--bs-white);
+  color: var(--bs-body-color);
+  overflow: hidden;
+}
+
+.pricing-tab.tabs-navigation .nav[data-hover=fancyHover] .nav-link:is(.active, :hover) {
+  color: var(--bs-primary);
+  background: var(--bs-white);
+  border-radius: 35px;
+}
+
+.pricing-tab.tabs-navigation .nav[data-hover=fancyHover] .nav-item:is(.active) .nav-link {
+  color: var(--bs-white);
+  background: var(--bs-primary) !important;
+  border-radius: 35px;
+}
+
+.pricing-tab.tabs-navigation .nav[data-hover=fancyHover] .nav-item:is(.active) .nav-link:is(:hover) {
+  background: var(--bs-white);
+  border: 1px solid var(--bs-primary);
+  border-radius: 35px;
+}
+
+.pricing-tab.tabs-navigation .target {
+  position: absolute;
+  background: var(--bs-primary);
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 35px !important;
+}
+
+.pricing-card {
+  border-radius: 20px;
+  border: 1.5px solid var(--bs-border-color);
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 18px;
+  }
+
+  .icon {
+    max-width: 70px;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+  }
+
+  .item-list li {
+    margin-bottom: 14px;
+  }
+
+  .item-list i {
+    --size: 24px;
+    height: var(--size);
+    width: var(--size);
+    line-height: var(--size);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
+    -webkit-margin-end: 10px;
+    margin-inline-end: 10px;
+    font-weight: 600;
+  }
+
+  .item-list i.fa-check {
+    color: var(--bs-white);
+    background-color: var(--bs-green);
+  }
+
+  .item-list i.fa-xmark {
+    color: var(--bs-white);
+    background-color: var(--bs-red);
+  }
+
+  .pricing-btn {
+    border-radius: 20px;
+    padding: 12px 20px;
+    width: 90%;
+  }
+
+  .label-btn {
+    background: var(--bs-white);
+    font-size: 14px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .show-more {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--bs-body-color);
+  }
+
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bs-primary);
+    -webkit-transform: translateX(calc(-100% - 2px));
+    transform: translateX(calc(-100% - 2px));
+    z-index: -1;
+    -webkit-transition: -webkit-transform .4s ease-out;
+    transition: -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out;
+    transition: transform .4s ease-out, -webkit-transform .4s ease-out;
+    z-index: -1;
+  }
+
+  &.active::after,
+  &:hover::after {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  // hover and active css
+
+  &.active,
+  &:hover {
+    .icon {
+      background-color: var(--bs-white);
+      color: var(--bs-primary);
+    }
+
+    .pricing-title {
+      color: var(--bs-white);
+    }
+
+    .list-title {
+      color: var(--bs-white);
+    }
+
+    .pricing-btn {
+      background: var(--bs-white);
+      color: var(--bs-primary);
+    }
+
+    .price {
+      color: var(--bs-white);
+    }
+
+    .period {
+      color: var(--bs-white);
+    }
+
+    .item-list {
+      color: var(--bs-white);
+    }
+
+    .item-list i {
+      color: var(--bs-primary);
+      background-color: var(--bs-white);
+    }
+
+    .item-list i.fa-check {
+      color: var(--bs-green);
+      background-color: var(--bs-white);
+    }
+
+    .item-list i.fa-xmark {
+      color: var(--bs-white);
+      background-color: var(--bs-red);
+    }
+
+    .show-more {
+      color: var(--bs-white);
+    }
+  }
+}
+
+.tab-pane.fade {
+  transition: all 0.2s;
+  transform: translateY(1rem);
+}
+
+.tab-pane.fade.show {
+  transform: translateY(0rem);
+}

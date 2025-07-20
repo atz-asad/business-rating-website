@@ -1,0 +1,108 @@
+/*-----------------------------*/
+/*-------- Testiomonial CSS -------*/
+/*--------------------------*/
+
+.testimonial-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 20px;
+  background: #FFF;
+  overflow: hidden;
+
+
+  .testimonial-top {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 24px 0 0 24px;
+
+    .author-image {
+      --size: 44px;
+      max-width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .testimonial-body {
+    padding: 24px 30px 20px 24px;
+  }
+
+  .testimonial-footer {
+    border-top: 1px solid var(--bs-border-color);
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 24px 0 24px 24px;
+
+    .brand-logo {
+      --size: 44px;
+      max-width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.testimonial-vertical-wrapper {
+
+  .swiper-vertical-reverse,
+  .vertical-slider {
+    max-height: 740px;
+    padding-bottom: 20px;
+  }
+
+  .testimonial-card {
+    margin-bottom: 24px;
+  }
+}
+
+.testimonial-vertical-wrapper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+@media (max-width: 992px) {
+  .testimonial-vertical-wrapper .vertical-slider {
+    max-height: 700px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonial-vertical-wrapper .vertical-slider {
+    max-height: 750px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.testimonial-slider-area {
+  position: relative;
+  z-index: 1;
+  background: rgba(var(--bs-primary-rgb), 0.027);
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -46.63%, rgba(255, 255, 255, 0.95) 50%);
+    z-index: 1;
+  }
+}

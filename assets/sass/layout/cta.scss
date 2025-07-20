@@ -1,0 +1,122 @@
+/*-----------------------------*/
+/*-------- Cta CSS -------*/
+/*--------------------------*/
+
+.cta-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: var(--bs-radius-lg);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 55px 20px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--bs-radius-lg);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 0, 0, 0.69) 100%);
+    z-index: -1;
+  }
+
+  .shape {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+
+    .item {
+      width: 50%;
+      height: 224px;
+      border-radius: 10px;
+      overflow: hidden;
+      // border: 1px solid #ddd;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        // border: 1px solid #ddd;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    text-align: center;
+
+    .subtitle {
+      color: #C0C0C0;
+    }
+
+    .title {
+      color: #FFFFFF;
+    }
+
+    .desc {
+      color: #C0C0C0;
+    }
+  }
+
+  .shape {
+
+    .item.item-1 {
+      transform: skewY(-8deg);
+    }
+
+    .item.item-2 {
+      transform: skewY(-8deg);
+      margin-top: 30px;
+    }
+
+    .item.item-3 {
+      transform: skewY(8deg);
+      margin-top: 30px;
+    }
+
+    .item.item-4 {
+      transform: skewY(8deg);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cta-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .cta-wrapper .shape {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-wrapper .shape {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .cta-wrapper .shape {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .cta-wrapper .shape {
+    width: 90%;
+  }
+
+  .cta-wrapper .shape .item {
+    height: 190px;
+  }
+}
+
+/*-------- Cta CSS End -------*/

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Business Rating Website">
+        <title>Business || Rateing Details</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/all.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css">
+        <!-- icomoon -->
+        <link rel="stylesheet" href="assets/css/icomoon/style.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+        <!-- Aos animate css -->
+        <link rel="stylesheet" href="assets/css/vendor/aos.min.css">
+        <!-- Nice-select -->
+        <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+        <!-- magnific Popup -->
+        <link rel="stylesheet" href="assets/css/vendor/magnific-popup.min.css">
+        <!-- select2 -->
+        <link rel="stylesheet" href="assets/css/vendor/select2.min.css">
+        <!-- progreesbar -->
+        <link rel="stylesheet" href="assets/css/vendor/progressbar/jquery.rprogessbar.min.css">
+        <!-- bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/inner-page.css">
+
+    </head>
+
+    <body>
+
+        <!-- pages -->
+        <div class="pages">
+
+            <!-- Start preloader  -->
+            <div class="preloader">
+                <div class="preloader-content">
+                    <div class="img">
+                        <img src="assets/images/looder.gif" alt="looder">
+                    </div>
+                </div>
+            </div>
+            <!-- End preloader  -->
+
+            <!--========= Start Header =========-->
+            <header class="header-area border-bottom">
+                <nav class="navbar navbar-expand-xl hover-menu">
+                    <div class="container">
+                        <!-- Logo -->
+                        <a class="navbar-brand m-0" href="index.html">
+                            <img class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                        <button class="menu-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobilemenu-offcanvas" aria-controls="mobilemenu-offcanvas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse d-xl-block d-none" id="main_nav">
+                            <!-- Header menu -->
+                            <ul id="mainMenu" class="navbar-nav justify-content-center ms-auto gap-24">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+
+                                        <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                        <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                                        <li><a class="dropdown-item" href="404.html">404 page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- Header Buttons -->
+                            <div class="header-right ms-auto">
+
+                                <div class="language">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <select class="niceselect nice-select">
+                                        <option value="1">En</option>
+                                        <option value="2">Ar</option>
+                                        <option value="3">Bn</option>
+                                    </select>
+                                </div>
+
+                                <div class="item">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-light fa-user-group"></i> Sign In
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- navbar-collapse.// -->
+                    </div> <!-- container.// -->
+                </nav>
+            </header>
+            <!--========= End Header ==========-->
+
+            <!-- Start Mobile-menu -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+                id="mobilemenu-offcanvas">
+                <div class="offcanvas-header align-items-center justify-content-between px-20 pt-20">
+                    <a class="navbar-brand" href="index.html">
+                        <img width="150" class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                    </a>
+                    <a href="#" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    <nav id="mobileMenu" class="mobile-menu mb-40">
+
+                    </nav>
+
+                    <!-- menu-action-item-wrapper -->
+                    <div class="menu-action-item-wrapper">
+                        <div class="menu-action-item">
+                            <a href="javascript:void(0)">
+                                <span class="icon">
+                                    <i class="fal fa-globe"></i>
+                                </span>
+                                English
+                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+                            </a>
+                            <ul class="setting-dropdown">
+                                <li>
+                                    <a class="menu-link" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Bangla</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Hindi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-action-item">
+                            <a href="javascript:void(0)">
+                                <span class="icon">
+                                    <i class="fa-light fa-user-circle"></i>
+                                </span>
+                                Sign In
+                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+                            </a>
+                            <ul class="setting-dropdown">
+                                <li>
+                                    <a class="menu-link" href="signin.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="signup.html">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mobile-menu -->
+
+            <!-- Start breadcrumb section -->
+            <div class="section-breadcrumb breadcrumb-style-2 header-next bg-cover bg-img"
+                data-bg-image="assets/images/hero/breadcrumb-bg-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs-content">
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="all-rateing-list.html">Restaurants</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            Miami Luxurious Restaurant
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End breadcrumb section -->
+
+            <!-- ---------- Start Rating Details Area ----- -->
+            <div class="rating-details-area pt-40 pt-lg-80 pb-50 pb-100">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-7">
+                            <!-- details-card -->
+                            <div class="details-card">
+                                <figure class="details-card-image radius-lg">
+                                    <a href="#" class="radius-lg">
+                                        <img class="lazyload blur-up" src="assets/images/placeholder.svg"
+                                            data-src="assets/images/product/product-3.png" alt="product">
+                                    </a>
+                                    <div class="product-logo">
+                                        <a href="#">
+                                            <img class="blur-up radius-lg lazyload" src="assets/images/placeholder.svg"
+                                                data-src="assets/images/product/product-logo-4.png" alt="product">
+                                        </a>
+                                        <div class="verify">
+                                            <i class="fa-solid fa-badge-check"></i>
+                                        </div>
+                                    </div>
+                                </figure>
+
+                                <div class="details-card-body">
+                                    <h4 class="title">Miami Luxurious Restaurant</h4>
+                                    <p class="mb-2">Modern and spacious restaurant with a stylish</p>
+                                    <div class="review rate mb-10">
+                                        <div class="rating" style="width:80%"></div>
+                                    </div>
+                                    <p>4.5 reviews from 100 rating</p>
+                                    <div class="d-flex gap-10 flex-wrap">
+                                        <a target="_blank" href="#" class="btn btn-outline-light radius-30">Visit
+                                            Website</a>
+                                        <a target="_blank" href="#" class="btn thm-btn radius-30">Write a
+                                            Review</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="progress-header ">
+                                <h4 class="title">All Review</h4>
+                                <div class="tabs-navigation progress-tab-nav">
+                                    <ul class="nav nav-tabs gap-14" data-hover="fancyHover">
+                                        <li class="nav-item active">
+                                            <button class="nav-link hover-effect active" data-bs-toggle="tab"
+                                                data-bs-target="#mostRecent" type="button">Most Recent</button>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <button class="nav-link hover-effect " data-bs-toggle="tab"
+                                                data-bs-target="#mostRelevent" type="button">Most Relevant</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link hover-effect" data-bs-toggle="tab"
+                                                data-bs-target="#positive" type="button">Positive</button>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button class="nav-link hover-effect" data-bs-toggle="tab"
+                                                data-bs-target="#negative" type="button">Negative</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tab-content" id="progressTabContent">
+                                <div class="tab-pane fade show active" id="mostRecent" role="tabpanel" tabindex="0">
+                                    <!-- Progress card -->
+                                    <div class="progress-card mb-30">
+                                        <div class="section-title-inline mb-30">
+                                            <h4>Reviews Statas (4.5)</h4>
+                                            <a href="#" class="review-create-btn">Write a review</a>
+                                        </div>
+
+                                        <div class="progressbar-area">
+                                            <div class="progress-item">
+                                                <div class="label">5-Star</div>
+                                                <div class="progress-line" data-percentage="90"></div>
+                                                <div class="progresscount">90%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">4-Star</div>
+                                                <div class="progress-line" data-percentage="60"></div>
+                                                <div class="progresscount">60%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">3-Star</div>
+                                                <div class="progress-line" data-percentage="30"></div>
+                                                <div class="progresscount">30%</div>
+
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">2-Star</div>
+                                                <div class="progress-line" data-percentage="20"></div>
+                                                <div class="progresscount">20%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">1-Star</div>
+                                                <div class="progress-line" data-percentage="5"></div>
+                                                <div class="progresscount">05%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="mostRelevent" role="tabpanel" tabindex="0">
+                                    <!-- Progress card -->
+                                    <div class="progress-card mb-30">
+                                        <div class="section-title-inline mb-30">
+                                            <h4>Reviews Statas (4.5)</h4>
+                                            <a href="#" class="">Write a review</a>
+                                        </div>
+
+                                        <div class="progressbar-area">
+                                            <div class="progress-item">
+                                                <div class="label">5-Star</div>
+                                                <div class="progress-line" data-percentage="90"></div>
+                                                <div class="progresscount">90%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">4-Star</div>
+                                                <div class="progress-line" data-percentage="60"></div>
+                                                <div class="progresscount">60%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">3-Star</div>
+                                                <div class="progress-line" data-percentage="30"></div>
+                                                <div class="progresscount">30%</div>
+
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">2-Star</div>
+                                                <div class="progress-line" data-percentage="20"></div>
+                                                <div class="progresscount">20%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">1-Star</div>
+                                                <div class="progress-line" data-percentage="5"></div>
+                                                <div class="progresscount">05%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="positive" role="tabpanel" tabindex="0">
+                                    <!-- Progress card -->
+                                    <div class="progress-card mb-30">
+                                        <div class="section-title-inline mb-30">
+                                            <h4>Reviews Statas (4.5)</h4>
+                                            <a href="#" class="">Write a review</a>
+                                        </div>
+
+                                        <div class="progressbar-area">
+                                            <div class="progress-item">
+                                                <div class="label">5-Star</div>
+                                                <div class="progress-line" data-percentage="90"></div>
+                                                <div class="progresscount">90%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">4-Star</div>
+                                                <div class="progress-line" data-percentage="60"></div>
+                                                <div class="progresscount">60%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">3-Star</div>
+                                                <div class="progress-line" data-percentage="30"></div>
+                                                <div class="progresscount">30%</div>
+
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">2-Star</div>
+                                                <div class="progress-line" data-percentage="20"></div>
+                                                <div class="progresscount">20%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">1-Star</div>
+                                                <div class="progress-line" data-percentage="5"></div>
+                                                <div class="progresscount">05%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="negative" role="tabpanel" tabindex="0">
+                                    <!-- Progress card -->
+                                    <div class="progress-card mb-30">
+                                        <div class="section-title-inline mb-30">
+                                            <h4>Reviews Statas (4.5)</h4>
+                                            <a href="#" class="">Write a review</a>
+                                        </div>
+
+                                        <div class="progressbar-area">
+                                            <div class="progress-item">
+                                                <div class="label">5-Star</div>
+                                                <div class="progress-line" data-percentage="90"></div>
+                                                <div class="progresscount">90%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">4-Star</div>
+                                                <div class="progress-line" data-percentage="60"></div>
+                                                <div class="progresscount">60%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">3-Star</div>
+                                                <div class="progress-line" data-percentage="30"></div>
+                                                <div class="progresscount">30%</div>
+
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">2-Star</div>
+                                                <div class="progress-line" data-percentage="20"></div>
+                                                <div class="progresscount">20%</div>
+                                            </div>
+                                            <div class="progress-item">
+                                                <div class="label">1-Star</div>
+                                                <div class="progress-line" data-percentage="5"></div>
+                                                <div class="progresscount">05%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="details-info mb-30">
+                                <h4>Miami Luxurious Restaurant</h4>
+                                <p class="mb-20">Modern and spacious restaurant with a stylish</p>
+
+                                <p class="mb-0">Welcome to Miami’s Ultimate Destination for Fine Dining & Elegance" Step
+                                    into a world
+                                    of refined luxury and
+                                    unforgettable flavor at our premier restaurant, nestled in the vibrant heart of
+                                    Miami. Designed for those who appreciate
+                                    sophistication, style, and the art of exceptional cuisine, our venue offers a
+                                    stunning blend of coastal charm and
+                                    metropolitan elegance.</p>
+                                <p class="mb-0">nestled in the vibrant heart of
+                                    Miami. Designed for those who appreciate
+                                    sophistication, style, and the art</p>
+                                <p class="mb-30">From the moment you arrive, you’ll be enveloped in an atmosphere of
+                                    upscale comfort —
+                                    where soft lighting, elegant
+                                    décor, and panoramic views of the Miami skyline or oceanfront set the stage for a
+                                </p>
+
+                                <div class="contact-info">
+                                    <h4>Contact Information</h4>
+
+                                    <ul class="reset-ul">
+                                        <li>
+                                            <i class="fal fa-map-marker-alt"></i> Uttara 11 no sector, House:32, Road:
+                                            03
+                                        </li>
+                                        <li>
+                                            <a href="mailto:yourmailaddress@mail.com">
+                                                <i class="fal fa-envelope"></i>yourmailaddress@mail.com
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:+00123456789001">
+                                                <i class="fal fa-phone-alt"></i> +001 234 5678 9001
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- review-card-grid -->
+                    <div class="review-card-grid">
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="user-info">
+                                    <div class="image">
+                                        <img class="lazyload blur-up" src="assets/images/placeholder.svg"
+                                            data-src="assets/images/avatar/avatar-1.png" alt="avatar">
+                                        <div class="verify">
+                                            <i class="fa-solid fa-badge-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="mb-1"><a href="#">Abdur Razzak</a></h5>
+                                        <div class="review-area">
+                                            <div class="review rate">
+                                                <div class="rating" style="width:80%"></div>
+                                            </div>
+                                            <p class="mb-0">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-0">10 days ago</p>
+                            </div>
+
+                            <div class="review-card-body">
+                                <p>The client received excellent feedback on DePalma Studios’ designs due to their
+                                    website's
+                                    improved look and feel. The
+                                    team was very communicative and collaborative, and they demonstrated a unique
+                                    understanding of the clients requirements, providing very creative and
+                                    well-thought-out
+                                    designs.</p>
+                            </div>
+                            <div class="review-card-footer">
+                                <p class="mb-1"><strong>Date of experience:</strong> July 02, 2025</p>
+                                <ul class="reset-ul">
+                                    <li>
+                                        <a href="#"><i class="far fa-heart"></i> Useful</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#socialMediaModal"><i
+                                                class="fal fa-share-alt"></i> Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="user-info">
+                                    <div class="image">
+                                        <img class="lazyload blur-up" src="assets/images/placeholder.svg"
+                                            data-src="assets/images/avatar/avatar-3.png" alt="avatar">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="mb-1"><a href="#">Ahmed Musa</a></h5>
+                                        <div class="review-area">
+                                            <div class="review rate">
+                                                <div class="rating" style="width:80%"></div>
+                                            </div>
+                                            <p class="mb-0">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-0">10 days ago</p>
+                            </div>
+                            <div class="review-card-body">
+                                <p>The client received excellent feedback on DePalma Studios’ designs due to their
+                                    website's
+                                    improved look and feel. The
+                                    team was very communicative and collaborative, and they demonstrated a unique
+                                    understanding of the clients requirements, providing very creative and
+                                    well-thought-out
+                                    designs.</p>
+                            </div>
+                            <div class="review-card-footer">
+                                <p class="mb-1"><strong>Date of experience:</strong> July 02, 2025</p>
+                                <ul class="reset-ul">
+                                    <li>
+                                        <a href="#"><i class="far fa-heart"></i> Useful</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#socialMediaModal"><i
+                                                class="fal fa-share-alt"></i> Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="user-info">
+                                    <div class="image">
+                                        <img class="lazyload blur-up" src="assets/images/placeholder.svg"
+                                            data-src="assets/images/avatar/avatar-2.png" alt="avatar">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="mb-1"><a href="#">James Robert</a></h5>
+                                        <div class="review-area">
+                                            <div class="review rate">
+                                                <div class="rating" style="width:80%"></div>
+                                            </div>
+                                            <p class="mb-0">4.5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-0">10 days ago</p>
+                            </div>
+
+                            <div class="review-card-body">
+                                <p>The client received excellent feedback on DePalma Studios’ designs due to their
+                                    website's
+                                    improved look and feel. The
+                                    team was very communicative and collaborative, and they demonstrated a unique
+                                    understanding of the clients requirements, providing very creative and
+                                    well-thought-out
+                                    designs.</p>
+                            </div>
+                            <div class="review-card-footer">
+                                <p class="mb-1"><strong>Date of experience:</strong> July 02, 2025</p>
+                                <ul class="reset-ul">
+                                    <li>
+                                        <a href="#"><i class="far fa-heart"></i> Useful</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#socialMediaModal"><i
+                                                class="fal fa-share-alt"></i>
+                                            Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="review-reply">
+                                <div class="review-reply-top">
+                                    <h6 class="mb-0">Reply from Fireplanet Company</h6>
+                                    <p class="mb-0">10 days ago</p>
+                                </div>
+                                <p class="mb-0">Hi Heather,</p>
+                                <p class="mb-0">We're glad to hear that Tara was such a big help! Congratulations on
+                                    your car
+                                    and thank you for choosing Fireplanet</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- pagination-area -->
+                    <div class="pagination-area mt-30">
+                        <ul class="pagination mb-0 justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <i class="fa-regular fa-arrow-left"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">
+                                        <i class="fa-regular fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ---------- End Rating Details Area ----- -->
+
+            <!-- Modal for social media link -->
+            <div class="modal fade socialMediaModal " id="socialMediaModal" tabindex="-1"
+                aria-labelledby="socialMediaModalTitle" aria-modal="true" role="dialog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLongTitle">Share On</h4>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="actions socialMediaModal_list">
+                                <div class="action-btn">
+                                    <a class="facebook" href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <span>Facebook</span>
+                                </div>
+                                <div class="action-btn">
+                                    <a href="#" class="linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <span>Linkedin</span>
+                                </div>
+                                <div class="action-btn">
+                                    <a class="twitter" href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <span>Twitter</span>
+                                </div>
+                                <div class="action-btn">
+                                    <a class="whatsapp" href="#">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <span>Whatsapp</span>
+                                </div>
+                                <div class="action-btn">
+                                    <a class="copy" href="#">
+                                        <i class="fal fa-copy"></i>
+                                    </a>
+                                    <span>copy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========= Start Footer ========= -->
+            <footer class="footer border-top pt-60 bg-cover bg-img" data-bg-image="assets/images/footer/footer-bg.jpg">
+                <div class="container">
+                    <div class="footer-top pb-30">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="100">
+                                    <!-- logo -->
+                                    <div class="footer-logo mb-24">
+                                        <a href="index.html">
+                                            <img class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                                        </a>
+                                    </div>
+                                    <p class="fw-medium mb-20">Sed ut perspiciatis unde omnis istecioeio natusioe error
+                                        sit voluptatem accusa ntium abboasr doloremque lauda.</p>
+
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <a href="#">
+                                            <img class="lazyload blur-up" src="assets/images/app-store.png"
+                                                alt="app-store">
+                                        </a>
+                                        <a href="#">
+                                            <img class="lazyload blur-up" src="assets/images/google-play.png"
+                                                alt="google-play">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="150">
+                                    <h5 class="mb-24 fw-semibold">Useful Links</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">Download App</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Registration</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Services</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Privacy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="200">
+                                    <h5 class="mb-24 fw-semibold">Categories</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">Graphics Design</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Programming</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Digital Marketing</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Music & Audio</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="200">
+                                    <h5 class="mb-24 fw-semibold">explore</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">About Us</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Our Mission</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">How It Work</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="300">
+                                    <h5 class="mb-24 fw-semibold">Email Subscribtion</h5>
+                                    <div class="footer-subscribe-widget mb-24">
+                                        <form>
+                                            <div class="subscribe-group-btn subscribe">
+                                                <input type="email" name="email" placeholder="Email here">
+                                                <button class="subscribe-btn" type="button">SUBSCRIBE</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="socials">
+                                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright border-top">
+                    <div class="go-top">
+                        <i class="fa-regular fa-angles-up"></i>
+                    </div>
+                    <!-- footer-copyright -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="copyright-content">
+                                    <p class="fw-medium small text-center mb-0">
+                                        © <span class="dynamic-year"></span>
+                                        TrustPro - Business Rating Website . All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- ========= End Footer ========= -->
+
+        </div><!-- End pages -->
+
+        <!-- jQuery Js -->
+        <script src="assets/js/jquery-min.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <!-- swiper -->
+        <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+        <!-- nice-select -->
+        <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+        <!-- jquery-ui -->
+        <script src="assets/js/vendor/jquery-ui.min.js"></script>
+        <!-- Aos js -->
+        <script src="assets/js/vendor/aos.min.js"></script>
+        <!-- lazy Image -->
+        <script src="assets/js/vendor/lazy.image.js"></script>
+        <!-- lazy Image -->
+        <script src="assets/js/vendor/lazysizes.min.js"></script>
+        <!-- magnific popup -->
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <!-- mouse hover tab -->
+        <script src="assets/js/vendor/mouse-hover-move.js"></script>
+        <!-- select2 -->
+        <script src="assets/js/vendor/select2.min.js"></script>
+        <!-- progressbar -->
+        <script src="assets/js/vendor/progressbar/jQuery.rProgressbar.min.js"></script>
+        <script src="assets/js/vendor/progressbar/jquery.waypoints.js"></script>
+        <!-- header-menu JS -->
+        <script src="assets/js/header-menu.js"></script>
+        <!-- custom -->
+        <script src="assets/js/script.js"></script>
+
+    </body>
+
+</html>

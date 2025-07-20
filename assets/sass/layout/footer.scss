@@ -1,0 +1,142 @@
+/**************************/
+/******** Footer CSS ******/
+/**************************/
+
+.footer-widget-item a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+  display: inline-block;
+  transition: all 0.4s ease;
+  position: relative;
+
+  &:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background: var(--bs-primary);
+    bottom: 0px;
+    left: 0px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  i {
+    color: var(--bs-primary);
+    margin-inline-end: 7px;
+  }
+}
+
+.footer-widget-item a:hover {
+  color: var(--bs-primary);
+}
+
+.subscribe-group-btn {
+  display: flex;
+  background: var(--bs-white);
+  justify-content: space-between;
+  border-radius: 6px;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  input {
+    color: var(--bs-body-color);
+    font-family: var(--bs-body-font-family);
+    font-size: 12px;
+    background: var(--bs-white);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    padding: 15px 14px 15px 15px;
+    border-radius: 10px;
+    width: calc(100% - 100px);
+    border: 0;
+  }
+
+  input:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  .subscribe-btn {
+    border-radius: 6px;
+    background: var(--bs-primary);
+    font-family: var(--bs-body-font-family);
+    color: var(--bs-white);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 37px;
+    padding: 0 15px;
+    outline: 0;
+    transition: all 0.3s ease;
+    border: 1px solid var(--bs-primary);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100px;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(var(--bs-primary-rgb), 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    color: var(--bs-primary);
+
+    &:hover {
+      background: rgba(var(--bs-primary-rgb), 1);
+      color: var(--bs-white);
+      transform: translateY(-5px);
+    }
+  }
+}
+
+/*============================
+  footer-copyright
+==============================*/
+//back to top css
+.footer-copyright {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  .go-top {
+    --size: 50px;
+    height: var(--size);
+    width: var(--size);
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    border-radius: 6px;
+    text-align: center;
+    line-height: var(--size);
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,153 @@
+/* Set default RTL direction */
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Text Alignment */
+.text-start {
+  text-align: right !important;
+}
+
+.text-end {
+  text-align: left !important;
+}
+
+/* Float utilities */
+.float-start {
+  float: right !important;
+}
+
+.float-end {
+  float: left !important;
+}
+
+/* Margin utilities */
+
+.ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.me-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.ms-3 {
+  margin-right: 1rem !important;
+  margin-left: 0 !important;
+}
+
+.me-3 {
+  margin-left: 1rem !important;
+  margin-right: 0 !important;
+}
+
+/* Padding utilities */
+.ps-3 {
+  padding-right: 1rem !important;
+  padding-left: 0 !important;
+}
+
+.pe-3 {
+  padding-left: 1rem !important;
+  padding-right: 0 !important;
+}
+
+.nice-select:after {
+  left: 12px;
+  right: unset;
+}
+.nice-select .list {
+  right: 0;
+  left: unset;
+}
+.nice-select .option {
+  padding-right: 18px;
+  padding-left: 29px;
+  text-align: right;
+}
+
+.dropdown-menu {
+  left: auto !important;
+  right: 0 !important;
+  text-align: right;
+}
+
+/* Inputs & Forms */
+input,
+textarea,
+select {
+  text-align: right;
+}
+
+/* Icon spacing */
+.icon-left {
+  margin-left: 0 !important;
+  margin-right: 10px !important;
+}
+
+.icon-right {
+  margin-right: 0 !important;
+  margin-left: 10px !important;
+}
+
+.rate {
+  background-position: 100% -16px;
+}
+
+.rating {
+  background-position: 100% 0;
+}
+
+/* heder */
+.navbar-nav .dropdown-menu .submenu {
+  left: -100% !important;
+  right: unset !important;
+  top: -2px;
+}
+.navbar .navbar-nav .dropdown-item::after {
+  right: 0px;
+  left: unset;
+}
+
+.header-right .language .nice-select {
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.section-hero::after {
+  right: 0;
+  left: unset;
+  background: linear-gradient(
+    -270deg,
+    rgba(0, 0, 0, 0) 34.62%,
+    rgba(0, 0, 0, 0.8) 86.56%
+  );
+}
+.section-hero .search-box .btn-primary {
+  left: 0;
+  right: unset;
+}
+
+.business-card .business-top-area .product-logo {
+  right: 0;
+  left: unset;
+}
+.business-card .business-top-area .product-logo .verify {
+  left: -11px;
+  right: unset;
+}
+
+.testimonial-card .testimonial-top {
+  padding: 24px 24px 0 0;
+}
+.testimonial-card .testimonial-footer {
+  padding: 24px 24px 24px 0;
+}
+
+.subscribe-group-btn .subscribe-btn {
+  right: unset;
+  left: 0;
+}

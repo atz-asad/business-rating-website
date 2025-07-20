@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Business Rating Website">
+        <title>Business || All Rateing</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/all.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css">
+        <!-- icomoon -->
+        <link rel="stylesheet" href="assets/css/icomoon/style.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+        <!-- Aos animate css -->
+        <link rel="stylesheet" href="assets/css/vendor/aos.min.css">
+        <!-- Nice-select -->
+        <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+        <!-- magnific Popup -->
+        <link rel="stylesheet" href="assets/css/vendor/magnific-popup.min.css">
+        <!-- select2 -->
+        <link rel="stylesheet" href="assets/css/vendor/select2.min.css">
+        <!-- progreesbar -->
+        <link rel="stylesheet" href="assets/css/vendor/progressbar/jquery.rprogessbar.min.css">
+        <!-- bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/inner-page.css">
+
+    </head>
+
+    <body>
+
+        <!-- pages -->
+        <div class="pages">
+
+            <!-- Start preloader  -->
+            <div class="preloader">
+                <div class="preloader-content">
+                    <div class="img">
+                        <img src="assets/images/looder.gif" alt="looder">
+                    </div>
+                </div>
+            </div>
+            <!-- End preloader  -->
+
+            <!--========= Start Header =========-->
+            <header class="header-area border-bottom">
+                <nav class="navbar navbar-expand-xl hover-menu">
+                    <div class="container">
+                        <!-- Logo -->
+                        <a class="navbar-brand m-0" href="index.html">
+                            <img class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                        </a>
+                        <button class="menu-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobilemenu-offcanvas" aria-controls="mobilemenu-offcanvas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse d-xl-block d-none" id="main_nav">
+                            <!-- Header menu -->
+                            <ul id="mainMenu" class="navbar-nav justify-content-center ms-auto gap-24">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+
+                                        <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                        <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                                        <li><a class="dropdown-item" href="404.html">404 page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- Header Buttons -->
+                            <div class="header-right ms-auto">
+
+                                <div class="language">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <select class="niceselect nice-select">
+                                        <option value="1">En</option>
+                                        <option value="2">Ar</option>
+                                        <option value="3">Bn</option>
+                                    </select>
+                                </div>
+
+                                <div class="item">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-light fa-user-group"></i> Sign In
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> <!-- navbar-collapse.// -->
+                    </div> <!-- container.// -->
+                </nav>
+            </header>
+            <!--========= End Header ==========-->
+
+            <!-- Start Mobile-menu -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+                id="mobilemenu-offcanvas">
+                <div class="offcanvas-header align-items-center justify-content-between px-20 pt-20">
+                    <a class="navbar-brand" href="index.html">
+                        <img width="150" class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                    </a>
+                    <a href="#" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    <nav id="mobileMenu" class="mobile-menu mb-40">
+
+                    </nav>
+
+                    <!-- menu-action-item-wrapper -->
+                    <div class="menu-action-item-wrapper">
+                        <div class="menu-action-item">
+                            <a href="javascript:void(0)">
+                                <span class="icon">
+                                    <i class="fal fa-globe"></i>
+                                </span>
+                                English
+                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+                            </a>
+                            <ul class="setting-dropdown">
+                                <li>
+                                    <a class="menu-link" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Bangla</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="#">Hindi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-action-item">
+                            <a href="javascript:void(0)">
+                                <span class="icon">
+                                    <i class="fa-light fa-user-circle"></i>
+                                </span>
+                                Sign In
+                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
+                            </a>
+                            <ul class="setting-dropdown">
+                                <li>
+                                    <a class="menu-link" href="signin.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a class="menu-link" href="signup.html">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mobile-menu -->
+
+            <!-- Start breadcrumb section -->
+            <div class="section-breadcrumb pt-lg-90 pb-lg-90 pt-40 pb-40 header-next bg-cover bg-img"
+                data-bg-image="assets/images/hero/breadcrumb-bg-1.jpg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs-content text-center">
+                                <h2 class="mb-14">All Rating</h2>
+                                <nav aria-label="breadcrumb ">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">All Rating</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End breadcrumb section -->
+
+            <!-- ---------- Start rating-area ----- -->
+            <div class="rating-area pt-40 pt-lg-80 pb-50 pb-100">
+                <div class="container">
+                    <div class="rating-sort-area">
+                        <h4 class="text mb-0">Showing 1 – 9 of 15 results</h4>
+                        <div class="sort-area">
+                            <!-- sort-select -->
+                            <div class="item">
+                                <div>
+                                    <p class="mb-0">Sort by:</p>
+                                </div>
+                                <select class="niceselect nice-select">
+                                    <option value="">Featured</option>
+                                    <option value="">Shopping</option>
+                                    <option value="">Restaurants</option>
+                                </select>
+                            </div>
+                            <ul class="item reset-ul">
+                                <li>
+                                    <a class="view-type active" href="all-rateing-grid.html" data-type="grid-view">
+                                        <i class="fa-light fa-grid-2"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="view-type" href="all-rateing-list.html" data-type="list-view">
+                                        <i class="fa-regular fa-list"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="d-block d-xl-none">
+                                        <button class="btn btn-sm btn-primary icon-end radius-sm" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#widgetOffcanvas"
+                                            aria-controls="widgetOffcanvas">
+                                            <i class="fal fa-filter"></i> Filter
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="widget-offcanvas offcanvas-xl offcanvas-start" tabindex="-1"
+                                id="widgetOffcanvas" aria-labelledby="widgetOffcanvas">
+                                <!-- offcanvas-header -->
+                                <div class="offcanvas-header px-20">
+                                    <h4 class="offcanvas-title">Filter</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        data-bs-target="#widgetOffcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div class="offcanvas-body p-3 p-xl-0">
+                                    <aside class="widget-area">
+                                        <!-- widget-categories -->
+                                        <div class="widget widget-categories border-bottom mb-24 pb-24">
+                                            <h4 class="title mb-0">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#categories" aria-expanded="true"
+                                                    aria-controls="categories">
+                                                    Select Categories
+                                                </button>
+                                            </h4>
+                                            <!-- Categories -->
+                                            <div id="categories" class="collapse show mt-24">
+                                                <div class="accordion-body">
+                                                    <ul class="list-group reset-ul toggle-list"
+                                                        data-toggle-list="categoryToggle" data-toggle-show="6">
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle active" id="*">
+                                                                All <span class="qty">(200)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="restaurants-cafes">
+                                                                Restaurants & Cafes
+                                                                <span class="qty">(01)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="Hotels">
+                                                                Hotels & Travel Services
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="hospital">
+                                                                Health & Wellness
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="hospital">
+                                                                Home Services
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="hospital">
+                                                                Auto Services
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="hospital">
+                                                                Retail & Shopping
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="hospital">
+                                                                Retail & Shopping
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <a href="#" class="category-toggle" id="hospital">
+                                                                Retail & Shopping
+                                                                <span class="qty">(14)</span>
+                                                            </a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                    <span class="show-more mt-10 d-inline-block"
+                                                        data-toggle-btn="toggleListBtn">Show More +</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End widget-categories -->
+
+                                        <!-- Start widget-filter -->
+                                        <div class="widget widget-filter border-bottom mb-24 pb-24">
+                                            <h4 class="title mb-0">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#filter" aria-expanded="true"
+                                                    aria-controls="filter">
+                                                    Location Filter
+                                                </button>
+                                            </h4>
+                                            <div id="filter" class="collapse mt-24 show">
+                                                <div class="accordion-body">
+                                                    <div class="form-group mb-20">
+                                                        <label for="location" class="mb-10">Search Location</label>
+                                                        <select class="form-control select2" id="location">
+                                                            <option value="">United States</option>
+                                                            <option value="*">All</option>
+                                                            <option value="">United</option>
+                                                            <option value="">States</option>
+                                                            <option value="">Don</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="area mb-20">
+                                                        <label for="city-or-zip" class="mb-10">City or ZIP code</label>
+                                                        <div class="form-group icon-end">
+                                                            <input type="text" class="form-control" id="city-or-zip"
+                                                                name="title" placeholder="Type a city or ZIP code">
+                                                            <label>
+                                                                <i class="fa-regular fa-magnifying-glass"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group mb-20">
+                                                        <label for="verification" class="mb-10">Verification</label>
+                                                        <select class="form-control select2" id="verification">
+                                                            <option value="">Verified Only</option>
+                                                            <option value="*">Unverified</option>
+                                                            <option value="">United</option>
+                                                            <option value="">States</option>
+                                                            <option value="">Don</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="ratingduration" class="mb-10">Rating
+                                                            Duration</label>
+                                                        <select class="form-control select2 adad" id="ratingduration">
+                                                            <option value="">Verified Only</option>
+                                                            <option value="*">Unverified</option>
+                                                            <option value="">United</option>
+                                                            <option value="">States</option>
+                                                            <option value="">Don</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End widget-filter -->
+
+                                        <!-- widget-rating -->
+                                        <div class="widget widget-rating border-bottom mb-24 pb-24">
+                                            <h4 class="title mb-0">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#rating" aria-expanded="true"
+                                                    aria-controls="rating">
+                                                    Rating Filter
+                                                </button>
+                                            </h4>
+
+                                            <div id="rating" class="collapse mt-24 show">
+                                                <div class="accordion-body">
+                                                    <ul class="list-group reset-ul custom-radio">
+                                                        <li>
+                                                            <input class="input-radio" type="radio" name="radio"
+                                                                id="radio6" value="0" checked="">
+                                                            <label class="form-radio-label" for="radio6">
+                                                                Show All
+                                                                <span class="small">1,500</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input class="input-radio" type="radio" name="radio"
+                                                                id="radio1" value="5">
+                                                            <label class="form-radio-label" for="radio1">
+                                                                1 Star and higher
+                                                                <span>1,000</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input class="input-radio" type="radio" name="radio"
+                                                                id="radio2" value="4">
+                                                            <label class="form-radio-label" for="radio2">
+                                                                2 Star and higher
+                                                                <span class="small">2,500</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input class="input-radio" type="radio" name="radio"
+                                                                id="radio3" value="3">
+                                                            <label class="form-radio-label" for="radio3">
+                                                                3 Star and higher
+                                                                <span class="smll">2,000</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input class="input-radio" type="radio" name="radio"
+                                                                id="radio4" value="2">
+                                                            <label class="form-radio-label" for="radio4">
+                                                                2 stars and higher
+                                                                <span class="small">1,200</span>
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <input class="input-radio" type="radio" name="radio"
+                                                                id="radio5" value="1">
+                                                            <label class="form-radio-label " for="radio5">
+                                                                5 Star rating
+                                                                <span class="small">1,300</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <a href="#" class="btn thm-btn w-100">Reset All</a>
+
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-9">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="business-card mb-24 radius-lg">
+                                        <div class="business-top-area">
+                                            <figure class="product-image radius-lg">
+                                                <a href="#" class="radius-lg lazy-container ratio ratio-5-2">
+                                                    <img class="lazyload" src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-4.png" alt="product">
+                                                </a>
+                                            </figure>
+
+                                            <div class="product-logo">
+                                                <a href="#">
+                                                    <img class="blur-up radius-lg lazyload"
+                                                        src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-logo-4.png"
+                                                        alt="product">
+                                                </a>
+                                                <div class="verify">
+                                                    <i class="fa-solid fa-badge-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="mb-1 fw-medium lc-2">
+                                                <a href="#">Miami Luxurious Restaurant</a>
+                                            </h4>
+                                            <p class="mb-0 lc-2">Modern and spacious restaurant with a stylish</p>
+                                            <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
+                                                </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="business-card mb-24 radius-lg">
+                                        <div class="business-top-area">
+                                            <figure class="product-image radius-lg">
+                                                <a href="#" class="radius-lg lazy-container ratio ratio-5-2">
+                                                    <img class="lazyload" src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-5.png" alt="product">
+                                                </a>
+                                            </figure>
+
+                                            <div class="product-logo">
+                                                <a href="#">
+                                                    <img class="blur-up radius-lg lazyload"
+                                                        src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-logo-5.png"
+                                                        alt="product">
+                                                </a>
+                                                <div class="verify">
+                                                    <i class="fa-solid fa-badge-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="mb-1 fw-medium lc-2">
+                                                <a href="#">Miami Luxurious Restaurant</a>
+                                            </h4>
+                                            <p class="mb-0 lc-2">Modern and spacious restaurant with a stylish</p>
+                                            <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
+                                                </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="business-card mb-24 radius-lg">
+                                        <div class="business-top-area">
+                                            <figure class="product-image radius-lg">
+                                                <a href="#" class="radius-lg lazy-container ratio ratio-5-2">
+                                                    <img class="lazyload" src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-6.png" alt="product">
+                                                </a>
+                                            </figure>
+
+                                            <div class="product-logo">
+                                                <a href="#">
+                                                    <img class="blur-up radius-lg lazyload"
+                                                        src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-logo-6.png"
+                                                        alt="product">
+                                                </a>
+                                                <div class="verify">
+                                                    <i class="fa-solid fa-badge-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="mb-1 fw-medium lc-2">
+                                                <a href="#">Miami Luxurious Restaurant</a>
+                                            </h4>
+                                            <p class="mb-0 lc-2">Modern and spacious restaurant with a stylish</p>
+                                            <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
+                                                </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="business-card mb-24 radius-lg">
+                                        <div class="business-top-area">
+                                            <figure class="product-image radius-lg">
+                                                <a href="#" class="radius-lg lazy-container ratio ratio-5-2">
+                                                    <img class="lazyload" src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-7.png" alt="product">
+                                                </a>
+                                            </figure>
+
+                                            <div class="product-logo">
+                                                <a href="#">
+                                                    <img class="blur-up radius-lg lazyload"
+                                                        src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-logo-7.png"
+                                                        alt="product">
+                                                </a>
+                                                <div class="verify">
+                                                    <i class="fa-solid fa-badge-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="mb-1 fw-medium lc-2">
+                                                <a href="#">Miami Luxurious Restaurant</a>
+                                            </h4>
+                                            <p class="mb-0 lc-2">Modern and spacious restaurant with a stylish</p>
+                                            <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
+                                                </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="business-card mb-24 radius-lg">
+                                        <div class="business-top-area">
+                                            <figure class="product-image radius-lg">
+                                                <a href="#" class="radius-lg lazy-container ratio ratio-5-2">
+                                                    <img class="lazyload" src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-7.png" alt="product">
+                                                </a>
+                                            </figure>
+
+                                            <div class="product-logo">
+                                                <a href="#">
+                                                    <img class="blur-up radius-lg lazyload"
+                                                        src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-logo-7.png"
+                                                        alt="product">
+                                                </a>
+                                                <div class="verify">
+                                                    <i class="fa-solid fa-badge-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="mb-1 fw-medium lc-2">
+                                                <a href="#">Miami Luxurious Restaurant</a>
+                                            </h4>
+                                            <p class="mb-0 lc-2">Modern and spacious restaurant with a stylish</p>
+                                            <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
+                                                </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="business-card mb-24 radius-lg">
+                                        <div class="business-top-area">
+                                            <figure class="product-image radius-lg">
+                                                <a href="#" class="radius-lg lazy-container ratio ratio-5-2">
+                                                    <img class="lazyload" src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-7.png" alt="product">
+                                                </a>
+                                            </figure>
+
+                                            <div class="product-logo">
+                                                <a href="#">
+                                                    <img class="blur-up radius-lg lazyload"
+                                                        src="assets/images/placeholder.svg"
+                                                        data-src="assets/images/product/product-logo-7.png"
+                                                        alt="product">
+                                                </a>
+                                                <div class="verify">
+                                                    <i class="fa-solid fa-badge-check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="mb-1 fw-medium lc-2">
+                                                <a href="#">Miami Luxurious Restaurant</a>
+                                            </h4>
+                                            <p class="mb-0 lc-2">Modern and spacious restaurant with a stylish</p>
+                                            <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
+                                                </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-area mt-30">
+                                <ul class="pagination mb-0 justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <i class="fa-regular fa-arrow-left"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <i class="fa-regular fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------- End rating-area ----- -->
+
+
+            <!-- ========= Start Footer ========= -->
+            <footer class="footer border-top pt-60 bg-cover bg-img" data-bg-image="assets/images/footer/footer-bg.jpg">
+                <div class="container">
+                    <div class="footer-top pb-30">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="100">
+                                    <!-- logo -->
+                                    <div class="footer-logo mb-24">
+                                        <a href="index.html">
+                                            <img class="lazyload blur-up" src="assets/images/logo/logo.png" alt="logo">
+                                        </a>
+                                    </div>
+                                    <p class="fw-medium mb-20">Sed ut perspiciatis unde omnis istecioeio natusioe error
+                                        sit voluptatem accusa ntium abboasr doloremque lauda.</p>
+
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <a href="#">
+                                            <img class="lazyload blur-up" src="assets/images/app-store.png"
+                                                alt="app-store">
+                                        </a>
+                                        <a href="#">
+                                            <img class="lazyload blur-up" src="assets/images/google-play.png"
+                                                alt="google-play">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="150">
+                                    <h5 class="mb-24 fw-semibold">Useful Links</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">Download App</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Registration</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Services</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Privacy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="200">
+                                    <h5 class="mb-24 fw-semibold">Categories</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">Graphics Design</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Programming</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Digital Marketing</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Music & Audio</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="200">
+                                    <h5 class="mb-24 fw-semibold">explore</h5>
+                                    <div class="footer-widget-item">
+                                        <ul class="reset-ul">
+                                            <li><a class="mb-2 fw-medium" href="#">About Us</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Our Mission</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">How It Work</a></li>
+                                            <li><a class="mb-2 fw-medium" href="#">Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-sm-6">
+                                <!-- footer-widget -->
+                                <div class="footer-widget mb-30" data-aos="fade-up" data-aos-delay="300">
+                                    <h5 class="mb-24 fw-semibold">Email Subscribtion</h5>
+                                    <div class="footer-subscribe-widget mb-24">
+                                        <form>
+                                            <div class="subscribe-group-btn subscribe">
+                                                <input type="email" name="email" placeholder="Email here">
+                                                <button class="subscribe-btn" type="button">SUBSCRIBE</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="socials">
+                                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright border-top">
+                    <div class="go-top">
+                        <i class="fa-regular fa-angles-up"></i>
+                    </div>
+                    <!-- footer-copyright -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="copyright-content">
+                                    <p class="fw-medium small text-center mb-0">
+                                        © <span class="dynamic-year"></span>
+                                        TrustPro - Business Rating Website . All Rights Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- ========= End Footer ========= -->
+
+        </div><!-- End pages -->
+
+        <!-- jQuery Js -->
+        <script src="assets/js/jquery-min.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <!-- swiper -->
+        <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+        <!-- nice-select -->
+        <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+        <!-- jquery-ui -->
+        <script src="assets/js/vendor/jquery-ui.min.js"></script>
+        <!-- Aos js -->
+        <script src="assets/js/vendor/aos.min.js"></script>
+        <!-- lazy Image -->
+        <script src="assets/js/vendor/lazy.image.js"></script>
+        <!-- lazy Image -->
+        <script src="assets/js/vendor/lazysizes.min.js"></script>
+        <!-- magnific popup -->
+        <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <!-- mouse hover tab -->
+        <script src="assets/js/vendor/mouse-hover-move.js"></script>
+        <!-- select2 -->
+        <script src="assets/js/vendor/select2.min.js"></script>
+        <!-- progressbar -->
+        <script src="assets/js/vendor/progressbar/jQuery.rProgressbar.min.js"></script>
+        <script src="assets/js/vendor/progressbar/jquery.waypoints.js"></script>
+        <!-- header-menu JS -->
+        <script src="assets/js/header-menu.js"></script>
+        <!-- custom -->
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>
