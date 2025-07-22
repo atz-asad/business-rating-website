@@ -2,26 +2,78 @@
 /*====== preloader ======*/
 /*====================== */
 
-.preloader.hidden{
-    visibility: hidden; 
-    opacity: 0; 
-    // transition: all 0.3s 1s ease-out;
+.preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .preloader {
-    height: 100%;
-    width: 100%;
     position: fixed;
-    overflow: visible;
-    z-index: 99999;
     top: 0;
     left: 0;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    background: var(--bs-body-bg);
+    height: 100%;
+    width: 100%;
+    background: var(--bs-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+    z-index: 99999;
+
+    .preloader-content ul {
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+
+        li {
+            height: 40px;
+            width: 40px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            color: orange;
+        }
+
+        li:nth-child(1) {
+            animation: stars-pulse 2s ease-in-out infinite;
+        }
+
+        li:nth-child(2) {
+            animation: stars-pulse 2s 0.2s ease-in-out infinite;
+        }
+
+        li:nth-child(3) {
+            animation: stars-pulse 2s 0.4s ease-in-out infinite;
+        }
+
+        li:nth-child(4) {
+            animation: stars-pulse 2s 0.6s ease-in-out infinite;
+        }
+
+        li:nth-child(5) {
+            animation: stars-pulse 2s 0.8s ease-in-out infinite;
+        }
+    }
 }
 
+
+
+@keyframes stars-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    30% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

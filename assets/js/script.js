@@ -350,6 +350,7 @@
     });
 
 
+    // selected rating
     document.addEventListener("DOMContentLoaded", () => {
         const stars = document.querySelectorAll(".rate-stat li");
         const ratingLabel = document.getElementById("rating-label");
@@ -362,8 +363,15 @@
             5: "Excellent"
         };
 
+        let selectedRating = null; // Keep track of the selected rating
+
         stars.forEach((star, index) => {
+            const starValue = star.getAttribute("data-star");
+
+            // Click: select rating
             star.addEventListener("click", () => {
+                selectedRating = starValue;
+
                 // Remove active class from all
                 stars.forEach(s => s.classList.remove("active"));
                 // Add to selected
@@ -371,11 +379,26 @@
                     stars[i].classList.add("active");
                 }
 
-                const selectedStar = star.getAttribute("data-star");
-                ratingLabel.textContent = starLabels[selectedStar] || "Select a rating";
+                ratingLabel.textContent = starLabels[starValue] || "Select a rating";
+            });
+
+            // Hover: preview rating label
+            star.addEventListener("mouseenter", () => {
+                ratingLabel.textContent = starLabels[starValue] || "Select a rating";
+            });
+
+            // Mouse leave: reset to selected rating
+            star.addEventListener("mouseleave", () => {
+                if (selectedRating) {
+                    ratingLabel.textContent = starLabels[selectedRating];
+                } else {
+                    ratingLabel.textContent = "Select a rating";
+                }
             });
         });
     });
+
+
 
 
 

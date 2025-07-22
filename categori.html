@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Business Rating Website">
-        <title>Business || Blog</title>
+        <title>Business || categories</title>
 
         <!-- favicon -->
         <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
@@ -189,17 +189,20 @@
             <!-- End Mobile-menu -->
 
             <!-- Start breadcrumb section -->
-            <div class="section-breadcrumb pt-lg-90 pb-lg-90 pt-40 pb-40 header-next bg-cover bg-img"
+            <div class="section-breadcrumb breadcrumb-style-2 header-next bg-cover bg-img"
                 data-bg-image="assets/images/hero/breadcrumb-bg-1.jpg">
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <div class="row">
                         <div class="col-lg-12">
-                            <div class="breadcrumbs-content text-center">
-                                <h2 class="mb-14">Blog</h2>
+                            <div class="breadcrumbs-content">
                                 <nav aria-label="breadcrumb ">
-                                    <ol class="breadcrumb justify-content-center">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            <a href="all-rateing-list.html">Categori</a>
+                                        </li>
                                     </ol>
                                 </nav>
                             </div>
@@ -209,154 +212,192 @@
             </div>
             <!-- End breadcrumb section -->
 
-            <!-- Start faq section -->
-            <section class="section-faq pt-120 pb-120">
+            <!-- categori-search-area -->
+            <div class="categori-search-area bg-primary-light">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-7">
-                            <div class="section-title text-center mb-60">
-                                <h2 class="title">Frequently Asked Questions</h2>
-                                <p class="text px-lg-120">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="search-form-wrap">
+                        <h3 class="mb-20">What are you looking for?</h3>
+                        <form class="search-form radius-md" method="GET">
+                            <input type="search" class="search-input form-control" placeholder="Search By Title"
+                                name="title" value="" required="">
+
+                            <button class="btn-search" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- categori-search-area -->
+
+            <!-- Start Categori Area -->
+            <div class="categori-area pt-40 pt-lg-60 pb-50 pb-100">
+                <div class="container">
+                    <h4 class="mb-30">Explore companies by category</h4>
+                    <div class="category-list-card-grid">
+                        <!-- 1. Animals & Pets -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #fff7c4;">
+                                <div class="icon"><i class="fal fa-paw"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Animals & Pets</a></h5>
                             </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Animal Health</a></li>
+                                <li><a href="#">Animal Parks & Zoo</a></li>
+                                <li><a href="#">Cats & Dogs</a></li>
+                                <li><a href="#">Horses & Riding</a></li>
+                                <li><a href="#">Pet Services</a></li>
+                                <li><a href="#">Pet Stores</a></li>
+                            </ul>
                         </div>
 
-                        <div class="col-lg-7">
-                            <div class="accordion accordion-v2 mb-40" id="faqAccordion">
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <span>01:</span>What is All Listing app?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">To list your car, simply create an account on our website,
-                                                provide accurate vehicle information, upload high-quality photos, and
-                                                set an appropriate price.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
-                                            aria-controls="collapseTwo">
-                                            <span>02:</span>How to Purchase this App ?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">Yes, you can list multiple cars using a single account. Just
-                                                follow the same listing process for each vehicle.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsethree"
-                                            aria-expanded="true" aria-controls="collapsethree">
-                                            <span>03:</span>How do I Make a Premium User?
-                                        </button>
-                                    </h2>
-                                    <div id="collapsethree" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">We offer both free and premium listing options. Basic
-                                                listings are free, while premium options may include enhanced visibility
-                                                and additional features for a fee.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsefour"
-                                            aria-expanded="true" aria-controls="collapsefour">
-                                            <span>04:</span>How to Debug this App?
-                                        </button>
-                                    </h2>
-                                    <div id="collapsefour" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">It's important to provide detailed information such as the
-                                                make, model, year, mileage, condition, features, and any history of
-                                                accidents or repairs. The more details you provide, the better your
-                                                chances of attracting potential buyers..</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsefive"
-                                            aria-expanded="true" aria-controls="collapsefive">
-                                            <span>05:</span>Can I make an Appointment?
-                                        </button>
-                                    </h2>
-                                    <div id="collapsefive" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">The duration of your car listing depends on the type of
-                                                listing you choose. Free listings usually have a standard duration,
-                                                while premium listings may have extended visibility periods.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="true"
-                                            aria-controls="collapsesix">
-                                            <span>06:</span>What's the Business Policies?
-                                        </button>
-                                    </h2>
-                                    <div id="collapsesix" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">Yes, you can edit your listing at any time. Log in to your
-                                                account, access your listing, and make the necessary changes to the
-                                                details, price, or images</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- accordion-item -->
-                                <div class="accordion-item border mb-20">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button fw-medium collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseseven"
-                                            aria-expanded="true" aria-controls="collapseseven">
-                                            <span>07:</span>What's the Business Policies?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseseven" class="accordion-collapse collapse"
-                                        data-bs-parent="#faqAccordion">
-                                        <div class="accordion-body">
-                                            <p class="mb-0">Interested buyers can contact you through the contact
-                                                information you provide in your listing. We recommend using our secure
-                                                messaging system to maintain privacy and security during negotiations.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- 2. Restaurants & Food -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #ffe5e5;">
+                                <div class="icon"><i class="fal fa-utensils"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Restaurants & Food</a></h5>
                             </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Cafes</a></li>
+                                <li><a href="#">Fast Food</a></li>
+                                <li><a href="#">Fine Dining</a></li>
+                                <li><a href="#">Street Food</a></li>
+                                <li><a href="#">Food Trucks</a></li>
+                                <li><a href="#">Takeaways</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 3. Health & Medical -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #d4f4f6;">
+                                <div class="icon"><i class="fal fa-clinic-medical"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Health & Medical</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Hospitals</a></li>
+                                <li><a href="#">Clinics</a></li>
+                                <li><a href="#">Doctors</a></li>
+                                <li><a href="#">Dentists</a></li>
+                                <li><a href="#">Pharmacies</a></li>
+                                <li><a href="#">Eye Care</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 4. Education -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #e5f0ff;">
+                                <div class="icon"><i class="fal fa-graduation-cap"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Education</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Schools</a></li>
+                                <li><a href="#">Colleges</a></li>
+                                <li><a href="#">Universities</a></li>
+                                <li><a href="#">Coaching Centers</a></li>
+                                <li><a href="#">Online Courses</a></li>
+                                <li><a href="#">Libraries</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 5. Automotive -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #f0f8e2;">
+                                <div class="icon"><i class="fal fa-car"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Automotive</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Car Dealers</a></li>
+                                <li><a href="#">Repair Shops</a></li>
+                                <li><a href="#">Car Wash</a></li>
+                                <li><a href="#">Motorcycles</a></li>
+                                <li><a href="#">Auto Parts</a></li>
+                                <li><a href="#">Driving Schools</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 6. Beauty & Spa -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #fce4ec;">
+                                <div class="icon"><i class="fal fa-spa"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Beauty & Spa</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Hair Salons</a></li>
+                                <li><a href="#">Nail Salons</a></li>
+                                <li><a href="#">Massage Therapy</a></li>
+                                <li><a href="#">Skin Care</a></li>
+                                <li><a href="#">Makeup Artists</a></li>
+                                <li><a href="#">Spas</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 7. Home Services -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #eafaf1;">
+                                <div class="icon"><i class="fal fa-tools"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Home Services</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Plumbing</a></li>
+                                <li><a href="#">Electrical</a></li>
+                                <li><a href="#">Cleaning</a></li>
+                                <li><a href="#">Pest Control</a></li>
+                                <li><a href="#">AC Repair</a></li>
+                                <li><a href="#">Painting</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 8. Travel & Transport -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #e0f7fa;">
+                                <div class="icon"><i class="fal fa-plane-departure"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Travel & Transport</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Travel Agencies</a></li>
+                                <li><a href="#">Bus Services</a></li>
+                                <li><a href="#">Taxi & Ride Share</a></li>
+                                <li><a href="#">Airlines</a></li>
+                                <li><a href="#">Train Services</a></li>
+                                <li><a href="#">Tour Packages</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 9. Finance & Insurance -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #fff0e6;">
+                                <div class="icon"><i class="fal fa-piggy-bank"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Finance & Insurance</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Banks</a></li>
+                                <li><a href="#">Insurance Companies</a></li>
+                                <li><a href="#">Loan Providers</a></li>
+                                <li><a href="#">Accountants</a></li>
+                                <li><a href="#">Investment Firms</a></li>
+                                <li><a href="#">Tax Advisors</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 10. Real Estate -->
+                        <div class="category-list-card">
+                            <div class="category-card-heder" style="background: #f3f0ff;">
+                                <div class="icon"><i class="fal fa-building"></i></div>
+                                <h5 class="mb-0 fw-semibold"><a href="#">Real Estate</a></h5>
+                            </div>
+                            <ul class="reset-ul category-list">
+                                <li><a href="#">Property Agents</a></li>
+                                <li><a href="#">Buy & Sell</a></li>
+                                <li><a href="#">Rental Services</a></li>
+                                <li><a href="#">Commercial Spaces</a></li>
+                                <li><a href="#">Construction</a></li>
+                                <li><a href="#">Home Loans</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End section -->
+            </div>
+            <!-- End Categori Area -->
 
             <!-- ========= Start Footer ========= -->
             <footer class="footer border-top pt-60 bg-cover bg-img" data-bg-image="assets/images/footer/footer-bg.jpg">
@@ -507,6 +548,7 @@
         <script src="assets/js/header-menu.js"></script>
         <!-- custom -->
         <script src="assets/js/script.js"></script>
+
     </body>
 
 </html>

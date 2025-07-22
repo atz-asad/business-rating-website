@@ -130,8 +130,7 @@
 }
 .rating-details-area .progress-header .progress-tab-nav {
   text-align: right;
-  width: max-content;
-  padding-inline: 0 10px;
+  width: 100%;
 }
 .rating-details-area .progress-header .progress-tab-nav .nav-tabs .nav-link {
   border-radius: 30px;
@@ -229,7 +228,7 @@
   column-gap: 30px;
 }
 @media (max-width: 768px) {
-  .rating-details-area .review-card-grid .review-card-grid {
+  .rating-details-area .review-card-grid {
     column-count: 1;
   }
 }
@@ -325,6 +324,21 @@
 /*--------------------------------
 /  Create-Review-Area
 /--------------------------------*/
+.create-review-area .review-area-row {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  gap: 60px;
+  position: relative;
+  justify-content: center;
+}
+.create-review-area .create-review-sidebar {
+  position: sticky;
+  top: 130px;
+  max-width: 320px;
+  align-self: start;
+}
 .create-review-area .business-card-v3 {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -332,6 +346,15 @@
 }
 .create-review-area .business-card-v3 .product-image {
   position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  height: 180px;
+}
+.create-review-area .business-card-v3 .product-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--bs-radius-lg);
 }
 .create-review-area .business-card-v3 .author i {
   margin-inline-end: 5px;
@@ -344,6 +367,11 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  max-width: 70px;
+}
+.create-review-area .business-card-v3 .product-logo img {
+  width: 100%;
+  height: auto;
 }
 .create-review-area .business-card-v3 .product-logo .verify {
   position: absolute;
@@ -354,17 +382,14 @@
   color: #3E4FE6;
   font-size: 21px;
 }
-.create-review-area .create-review-sidebar {
-  position: sticky;
-  top: 130px;
-}
-.create-review-area .review-submit-item {
-  margin-bottom: 20px;
+.create-review-area .business-card-v3 .title {
+  font-size: 20px;
 }
 .create-review-area .review-submit-area {
   border-right: 2px solid rgba(var(--bs-primary-rgb), 0.48);
-  padding-right: 60px;
-  margin-right: 60px;
+  padding-inline-end: 60px;
+  max-width: 450px;
+  width: 100%;
 }
 .create-review-area .review-submit-area .review-submit-item {
   margin-bottom: 20px;
@@ -393,6 +418,9 @@
 }
 .create-review-area .review-submit-area select {
   border: 1px solid #ccc;
+}
+.create-review-area .review-submit-area .select2-container {
+  width: 100% !important;
 }
 .create-review-area .review-submit-area .form-check-input {
   border-color: #ccc;
@@ -434,8 +462,172 @@
   background-color: orange;
   color: #fff;
 }
+@media (max-width: 992px) {
+  .create-review-area .review-area-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .create-review-area .create-review-sidebar {
+    order: -1;
+    position: inherit;
+    top: 0;
+    max-width: 100%;
+  }
+  .create-review-area .business-card-v3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .create-review-area .business-card-v3 .product-image {
+    max-width: 200px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .create-review-area .business-card-v3 .product-logo {
+    right: 0;
+    left: unset;
+    bottom: 0;
+  }
+  .create-review-area .review-submit-area {
+    border-top: 2px solid rgba(var(--bs-primary-rgb), 0.48);
+    border-right: 0;
+    padding-inline-end: 0;
+    padding-top: 30px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .create-review-area .business-card-v3 .product-logo {
+    max-width: 50px;
+  }
+  .create-review-area .review-submit-area .rate-stat-area {
+    align-items: self-start;
+    flex-direction: column;
+  }
+}
 
 /* create-review-area End */
+/*--------------------------------
+/  Categori page
+/--------------------------------*/
+.categori-search-area {
+  padding: 60px 0;
+}
+.categori-search-area .search-form-wrap {
+  text-align: center;
+}
+.categori-search-area .search-form {
+  display: flex;
+  position: relative;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categori-search-area .search-form .search-input {
+  display: block;
+  width: 100%;
+  height: 55px;
+  padding-inline-end: 60px;
+  line-height: 55px;
+  border-radius: 6px;
+}
+.categori-search-area .search-form .btn-search {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: var(--bs-white);
+  background: var(--bs-primary);
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.categori-area .category-list-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-radius-lg);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+.categori-area .category-list-card .category-card-heder {
+  background: #fff7c4;
+  text-align: center;
+  padding: 20px 15px;
+}
+.categori-area .category-list-card .category-card-heder .icon {
+  height: 68px;
+  width: 68px;
+  background: #FFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categori-area .category-list-card .category-card-heder .icon i {
+  transition: all 0.3s ease;
+}
+.categori-area .category-list-card .category-list {
+  padding-inline: 30px;
+}
+.categori-area .category-list-card .category-list li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.categori-area .category-list-card .category-list li a {
+  padding: 10px 0;
+  display: inline-block;
+}
+.categori-area .category-list-card .category-list li a:hover {
+  text-decoration: underline;
+}
+.categori-area .category-list-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.categori-area .category-list-card:hover .icon i {
+  animation: heartBeat 0.8s;
+  color: var(--bs-primary);
+}
+.categori-area .category-list-card-grid {
+  columns: 4;
+  column-gap: 30px;
+}
+.categori-area .category-list-card-grid .category-list-card {
+  display: inline-block;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .categori-area .category-list-card-grid {
+    column-count: 3;
+  }
+}
+@media (max-width: 768px) {
+  .categori-area .category-list-card-grid {
+    column-count: 2;
+  }
+}
+@media (max-width: 575px) {
+  .categori-area .category-list-card-grid {
+    column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  .categori-area .category-list-card-grid {
+    column-count: 1;
+  }
+}
+
+/* Categori page End */
 /* socialMediaModal */
 .socialMediaModal .socialMediaModal_list {
   display: flex;
@@ -792,6 +984,7 @@
 }
 .widget-area .accordion-button:not(.collapsed) {
   color: var(--bs-dark);
+  margin-bottom: 20px;
 }
 .widget-area .accordion-button:not(.collapsed)::after {
   color: var(--bs-primary);
@@ -804,6 +997,9 @@
 }
 .widget-area .widget .list-group li {
   color: var(--color-medium);
+}
+.widget-area .widget .list-group li:hover {
+  color: var(--bs-primary);
 }
 .widget-area .form-control {
   height: 42px;
@@ -1115,6 +1311,12 @@
 }
 .blog-card .blog-content {
   padding: 15px 20px 30px 20px;
+}
+.blog-card .blog-content .list-inline {
+  margin-bottom: 10px;
+}
+.blog-card .blog-content .list-inline a i {
+  margin-inline-end: 3px;
 }
 .blog-card .blog-content h5,
 .blog-card .blog-content .h5 {

@@ -21,7 +21,10 @@ body {
 .float-end {
   float: left !important;
 }
-
+.list-inline-item:not(:last-child) {
+  margin-left: 0.5rem;
+  margin-right: unset;
+}
 /* Margin utilities */
 
 .ms-auto {
@@ -54,7 +57,11 @@ body {
   padding-left: 1rem !important;
   padding-right: 0 !important;
 }
-
+/* nice-select */
+.nice-select {
+  padding-right: 18px;
+  padding-left: 30px;
+}
 .nice-select:after {
   left: 12px;
   right: unset;
@@ -100,6 +107,64 @@ select {
 .rating {
   background-position: 100% 0;
 }
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: unset;
+}
+
+/* .breadcrumb */
+.breadcrumb-item + .breadcrumb-item {
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  padding-left: unset;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-left: var(--bs-breadcrumb-item-padding-x);
+  padding-right: unset;
+}
+
+/* pagination */
+.page-item:first-child .page-link {
+  border-top-right-radius: var(--bs-pagination-border-radius);
+  border-bottom-right-radius: var(--bs-pagination-border-radius);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.page-item:not(:first-child) .page-link {
+  margin-right: calc(-1 * var(--bs-border-width));
+  margin-left: unset;
+}
+.pagination .page-item:not(:first-child) .page-link {
+  margin-left: 0;
+  border-left: 1px solid var(--bs-border-color);
+}
+.page-item:last-child .page-link {
+  border-top-left-radius: var(--bs-pagination-border-radius);
+  border-bottom-left-radius: var(--bs-pagination-border-radius);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/* pagination end */
+
+.form-check {
+  padding-right: 1.5em;
+  padding-left: unset;
+}
+.form-check .form-check-input {
+  float: right;
+  margin-right: -1.5em;
+  margin-left: unset;
+}
+.list-inline {
+  padding-right: 0;
+}
+.list-group {
+  padding-right: 0;
+}
+.list-unstyled {
+  padding-right: 0;
+}
+/* ------ Defalt rtl css end -------- */
 
 /* heder */
 .navbar-nav .dropdown-menu .submenu {
@@ -115,6 +180,30 @@ select {
 .header-right .language .nice-select {
   padding-right: 8px;
   padding-left: 24px;
+}
+
+/* header mobile */
+.navbar-nav {
+  padding-right: 0;
+}
+#mobilemenu-offcanvas.offcanvas.offcanvas-start {
+  top: 0;
+  right: 0;
+  left: unset;
+  transform: translateX(100%);
+}
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+  transform: none !important;
+}
+
+.menu-action-item-wrapper .menu-action-item .plus-icon {
+  float: left;
+}
+
+.mobile-menu .nav-link.dropdown-toggle::after {
+  left: 0;
+  right: unset;
 }
 
 .section-hero::after {
@@ -150,4 +239,104 @@ select {
 .subscribe-group-btn .subscribe-btn {
   right: unset;
   left: 0;
+}
+
+.categori-search-area .search-form .btn-search {
+  left: 10px;
+  right: unset;
+}
+
+.blog-card .blog-image .date {
+  border-radius: 0px 30px 30px 0px;
+  left: 0;
+  right: unset;
+}
+/* sidebar */
+.widget-area .widget.widget-categories .category-toggle::before {
+  right: 0px;
+}
+.widget-area .widget.widget-categories .category-toggle::after {
+  right: 3px;
+  left: unset;
+}
+.widget-area .widget.widget-rating .custom-radio .form-radio-label::before {
+  right: 0px;
+  left: unset;
+}
+.widget-area .widget.widget-rating .custom-radio .form-radio-label::after {
+  right: 3px;
+}
+.widget-area .widget.widget-rating .custom-radio .form-radio-label span {
+  float: left;
+}
+
+.widget-area .widget-search-form .btn-search {
+  left: 10px;
+  right: unset;
+}
+
+.business-card-list .business-top-area .product-logo {
+  left: 0;
+  right: unset;
+}
+.business-card-list .business-top-area .product-logo .verify {
+  left: -11px;
+  right: unset;
+}
+
+.rating-details-area
+  .progress-card
+  .progressbar-area
+  .progress-item
+  .label::before {
+  right: 0;
+  left: unset;
+}
+
+.create-review-area .review-submit-area {
+  border-left: 2px solid rgba(var(--bs-primary-rgb), 0.48);
+  border-right: 0;
+}
+
+.create-review-area .business-card-v3 .product-logo {
+  left: unset;
+  right: 0;
+}
+@media (max-width: 992px) {
+  .create-review-area .business-card-v3 .product-logo {
+    left: 0;
+    right: unset;
+    bottom: 0;
+  }
+  .create-review-area .business-card-v3 .product-logo .verify {
+    left: -11px;
+    right: unset;
+  }
+}
+
+.userinfo-area .form-group .icon {
+  left: unset;
+  right: 12px;
+}
+.show-password-field {
+  left: 16px;
+  right: unset;
+}
+
+.blog-details-area .item-single .blog-image .date {
+  left: 0;
+  right: unset;
+  border-radius: 0 30px 30px 0;
+}
+.blog-details-area .item-single .blog-image .btn {
+  left: 30px;
+  right: unset;
+}
+
+.rating-details-area .progress-header .progress-tab-nav {
+  text-align: left;
+}
+.socialMediaModal .close {
+  margin-right: auto;
+  margin-left: unset;
 }

@@ -42,9 +42,13 @@
             <!-- Start preloader  -->
             <div class="preloader">
                 <div class="preloader-content">
-                    <div class="img">
-                        <img src="assets/images/looder.gif" alt="looder">
-                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
                 </div>
             </div>
             <!-- End preloader  -->
@@ -69,25 +73,27 @@
                             <ul id="mainMenu" class="navbar-nav justify-content-center ms-auto gap-24">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-                                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="categori.html">Categories</a></li>
                                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
                                     <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+
                                         <li><a class="dropdown-item" href="all-rateing-grid.html">All Rateing grid</a>
                                         </li>
                                         <li><a class="dropdown-item" href="all-rateing-list.html">All Rateing list</a>
                                         </li>
+                                        <li><a class="dropdown-item" href="rateing-details.html">Rateing Details</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="review-create.html">Review Create</a></li>
                                         <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
                                         <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
                                         <li><a class="dropdown-item" href="faq.html">Faq</a></li>
                                         <li><a class="dropdown-item" href="404.html">404 page</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             </ul>
                             <!-- Header Buttons -->
@@ -203,7 +209,7 @@
             </div>
             <!-- End breadcrumb section -->
 
-            <!-- ---------- Start rating-area ----- -->
+            <!--  Start rating-area  -->
             <div class="rating-area pt-40 pt-lg-80 pb-50 pb-100">
                 <div class="container">
                     <div class="rating-sort-area">
@@ -267,7 +273,7 @@
                                                 </button>
                                             </h4>
                                             <!-- Categories -->
-                                            <div id="categories" class="collapse show mt-24">
+                                            <div id="categories" class="collapse show">
                                                 <div class="accordion-body">
                                                     <ul class="list-group reset-ul toggle-list"
                                                         data-toggle-list="categoryToggle" data-toggle-show="6">
@@ -277,56 +283,58 @@
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="restaurants-cafes">
+                                                            <a href="#" class="category-toggle">
                                                                 Restaurants & Cafes
                                                                 <span class="qty">(01)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="Hotels">
+                                                            <a href="#" class="category-toggle">
                                                                 Hotels & Travel Services
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="hospital">
+                                                            <a href="#" class="category-toggle">
                                                                 Health & Wellness
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="hospital">
+                                                            <a href="#" class="category-toggle">
                                                                 Home Services
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="hospital">
+                                                            <a href="#" class="category-toggle">
                                                                 Auto Services
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="hospital">
+                                                            <a href="#" class="category-toggle">
                                                                 Retail & Shopping
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="hospital">
+                                                            <a href="#" class="category-toggle">
                                                                 Retail & Shopping
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
                                                         <li class="list-item">
-                                                            <a href="#" class="category-toggle" id="hospital">
+                                                            <a href="#" class="category-toggle">
                                                                 Retail & Shopping
                                                                 <span class="qty">(14)</span>
                                                             </a>
                                                         </li>
+
+
                                                     </ul>
                                                     <span class="show-more mt-10 d-inline-block"
-                                                        data-toggle-btn="toggleListBtn">Show More+</span>
+                                                        data-toggle-btn="toggleListBtn">Show More +</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -341,7 +349,7 @@
                                                     Location Filter
                                                 </button>
                                             </h4>
-                                            <div id="filter" class="collapse mt-24 show">
+                                            <div id="filter" class="collapse show">
                                                 <div class="accordion-body">
                                                     <div class="form-group mb-20">
                                                         <label for="location" class="mb-10">Search Location</label>
@@ -403,7 +411,7 @@
                                                 </button>
                                             </h4>
 
-                                            <div id="rating" class="collapse mt-24 show">
+                                            <div id="rating" class="collapse show">
                                                 <div class="accordion-body">
                                                     <ul class="list-group reset-ul custom-radio">
                                                         <li>
@@ -867,7 +875,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ---------- End rating-area ----- -->
+            <!-- End rating-area  -->
 
             <!-- ========= Start Footer ========= -->
             <footer class="footer border-top pt-60 bg-cover bg-img" data-bg-image="assets/images/footer/footer-bg.jpg">

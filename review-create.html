@@ -42,9 +42,13 @@
             <!-- Start preloader  -->
             <div class="preloader">
                 <div class="preloader-content">
-                    <div class="img">
-                        <img src="assets/images/looder.gif" alt="looder">
-                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
                 </div>
             </div>
             <!-- End preloader  -->
@@ -69,25 +73,27 @@
                             <ul id="mainMenu" class="navbar-nav justify-content-center ms-auto gap-24">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-                                <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                                <li class="nav-item"><a class="nav-link" href="categori.html">Categories</a></li>
                                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
                                     <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+
                                         <li><a class="dropdown-item" href="all-rateing-grid.html">All Rateing grid</a>
                                         </li>
                                         <li><a class="dropdown-item" href="all-rateing-list.html">All Rateing list</a>
                                         </li>
+                                        <li><a class="dropdown-item" href="rateing-details.html">Rateing Details</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="review-create.html">Review Create</a></li>
                                         <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
                                         <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
                                         <li><a class="dropdown-item" href="faq.html">Faq</a></li>
                                         <li><a class="dropdown-item" href="404.html">404 page</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             </ul>
                             <!-- Header Buttons -->
@@ -212,135 +218,112 @@
             <!-- ---------- Start Create Review Area ----- -->
             <div class="create-review-area  pt-40 pt-lg-80 pb-50 pb-100">
                 <div class="container">
-                    <div class="row g-0 justify-content-center">
-
-                        <div class="col-lg-5">
-                            <div class="review-submit-area">
-                                <form action="" method="post" enctype="multipart/form-data">
-                                    <div class="review-submit-item">
-                                        <h4 class="mb-20">Write a Business Review</h4>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label for="business-name">Business Name <span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" id="business-name" class="form-control"
-                                            placeholder="e.g. Star Coffee House" required>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label for="category">Category <span class="text-danger">*</span></label>
-                                        <select id="category" class="form-control select2" required>
-                                            <option value="">Select a category</option>
-                                            <option value="restaurant">Restaurant</option>
-                                            <option value="hotel">Hotel</option>
-                                            <option value="salon">Salon</option>
-                                            <option value="store">Store</option>
-                                            <option value="service">Service</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label>Rate your experience <span class="text-danger">*</span></label>
-                                        <div class="rate-stat-area">
-                                            <ul class="rate-stat" role="radiogroup">
-                                                <li role="radio" data-star="1"><i class="fa-solid fa-star"></i></li>
-                                                <li role="radio" data-star="2"><i class="fa-solid fa-star"></i></li>
-                                                <li role="radio" data-star="3"><i class="fa-solid fa-star"></i></li>
-                                                <li role="radio" data-star="4"><i class="fa-solid fa-star"></i></li>
-                                                <li role="radio" data-star="5"><i class="fa-solid fa-star"></i></li>
-                                            </ul>
-                                            <span id="rating-label">Select a rating</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label for="review-title">Review Title <span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" id="review-title" class="form-control" maxlength="70"
-                                            placeholder="Summarize your experience" required>
-                                        <p class="small mt-1 text-end">Max 70 characters</p>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label for="review-text">Full Review <span class="text-danger">*</span></label>
-                                        <textarea id="review-text" class="form-control" maxlength="500" required
-                                            placeholder="Describe what you liked or didn't like..."></textarea>
-                                        <p class="small mt-1 text-end char-count" data-max="500">0/500 characters</p>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label for="visit-location">Location of Experience <span
-                                                class="text-danger">*</span></label>
-                                        <input type="text" id="visit-location" class="form-control"
-                                            placeholder="Enter city, area, or branch name" required>
-                                    </div>
-
-                                    <div class="review-submit-item">
-                                        <label for="photo-upload">Upload Photos (optional)</label>
-                                        <input type="file" id="photo-upload" class="form-control" accept="image/*"
-                                            multiple>
-                                    </div>
-
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                        <label class="form-check-label fw-normal" for="flexRadioDefault1">
-                                            This review reflects my genuine experience and opinion. I received no
-                                            payment or incentive from the business.
-                                        </label>
-                                    </div>
-
-                                    <button type="submit" class="btn mt-20 thm-btn w-100">Submit Review</button>
-                                </form>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-3">
-
-                            <div class="create-review-sidebar">
-                                <div class="business-card-v3 mb-24 radius-lg">
-
-                                    <figure class="product-image mb-20 pb-20 radius-lg">
-                                        <a href="#" class="radius-lg lazy-container ratio ratio-5-3">
-                                            <img class="lazyload" src="assets/images/placeholder.svg"
-                                                data-src="assets/images/product/product-4.png" alt="product">
-                                        </a>
-                                        <div class="product-logo">
-                                            <a href="#">
-                                                <img class="blur-up radius-lg lazyload"
-                                                    src="assets/images/placeholder.svg"
-                                                    data-src="assets/images/product/product-logo-4.png" alt="product">
-                                            </a>
-                                            <div class="verify">
-                                                <i class="fa-solid fa-badge-check"></i>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                    <div class="content">
-                                        <h4 class="mb-2 fw-bold lc-3">
-                                            <a href="#">Miami Luxurious Restaurant</a>
-                                        </h4>
-                                        <p class="mb-10 lc-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Nulla, corporis.</p>
-                                        <div class="author">
-                                            <a href="#"><i class="fal fa-user"></i> By Abdur Razzak</a>
-                                        </div>
-                                        <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                    <div class="review-area-row">
+                        <div class="review-submit-area">
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <div class="review-submit-item">
+                                    <h4 class="mb-20">Write a Business Review</h4>
+                                </div>
+                                <div class="review-submit-item">
+                                    <label for="business-name">Business Name <span class="text-danger">*</span></label>
+                                    <input type="text" id="business-name" class="form-control"
+                                        placeholder="e.g. Star Coffee House" required>
+                                </div>
+                                <div class="review-submit-item">
+                                    <label for="category">Category <span class="text-danger">*</span></label>
+                                    <select id="category" class="form-control select2" required>
+                                        <option value="">Select a category</option>
+                                        <option value="restaurant">Restaurant</option>
+                                        <option value="hotel">Hotel</option>
+                                        <option value="salon">Salon</option>
+                                        <option value="store">Store</option>
+                                        <option value="service">Service</option>
+                                    </select>
+                                </div>
+                                <div class="review-submit-item">
+                                    <label>Rate your experience <span class="text-danger">*</span></label>
+                                    <div class="rate-stat-area">
+                                        <ul class="rate-stat" role="radiogroup">
+                                            <li role="radio" data-star="1"><i class="fa-solid fa-star"></i></li>
+                                            <li role="radio" data-star="2"><i class="fa-solid fa-star"></i></li>
+                                            <li role="radio" data-star="3"><i class="fa-solid fa-star"></i></li>
+                                            <li role="radio" data-star="4"><i class="fa-solid fa-star"></i></li>
+                                            <li role="radio" data-star="5"><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                        <span id="rating-label">Select a rating</span>
                                     </div>
                                 </div>
-                                <p>"Not the right one?" <a href="#" class="text-decoration-underline">Change
-                                        activity</a>
-                                </p>
+                                <div class="review-submit-item">
+                                    <label for="review-title">Review Title <span class="text-danger">*</span></label>
+                                    <input type="text" id="review-title" class="form-control" maxlength="70"
+                                        placeholder="Summarize your experience" required>
+                                    <p class="small mt-1 text-end">Max 70 characters</p>
+                                </div>
+                                <div class="review-submit-item">
+                                    <label for="review-text">Full Review <span class="text-danger">*</span></label>
+                                    <textarea id="review-text" class="form-control" maxlength="500" required
+                                        placeholder="Describe what you liked or didn't like..."></textarea>
+                                    <p class="small mt-1 text-end char-count" data-max="500">0/500 characters</p>
+                                </div>
+                                <div class="review-submit-item">
+                                    <label for="visit-location">Location of Experience <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="visit-location" class="form-control"
+                                        placeholder="Enter city, area, or branch name" required>
+                                </div>
+                                <div class="review-submit-item">
+                                    <label for="photo-upload">Upload Photos (optional)</label>
+                                    <input type="file" id="photo-upload" class="form-control" accept="image/*" multiple>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label fw-normal" for="flexRadioDefault1">
+                                        This review reflects my genuine experience and opinion. I received no
+                                        payment or incentive from the business.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn mt-20 thm-btn w-100">Submit Review</button>
+                            </form>
+                        </div>
+                        <div class="create-review-sidebar">
+                            <div class="business-card-v3 mb-20 radius-lg">
+                                <figure class="product-image radius-lg">
+                                    <a href="#" class="radius-lg">
+                                        <img class="blur-up lazyload" src="assets/images/placeholder.svg"
+                                            data-src="assets/images/product/product-4.png" alt="product">
+                                    </a>
+                                    <div class="product-logo">
+                                        <a href="#">
+                                            <img class="blur-up radius-lg lazyload" src="assets/images/placeholder.svg"
+                                                data-src="assets/images/product/product-logo-4.png" alt="product">
+                                        </a>
+                                        <div class="verify">
+                                            <i class="fa-solid fa-badge-check"></i>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <div class="content">
+                                    <h4 class="mb-2 title fw-bold lc-2">
+                                        <a href="#">Miami Luxurious Restaurant</a>
+                                    </h4>
+                                    <p class="mb-10 lc-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Nulla, corporis.</p>
+                                    <div class="author">
+                                        <a href="#"><i class="fal fa-user"></i> By Abdur Razzak</a>
+                                    </div>
+                                    <p class="mb-1"><a href="#">www.miamiluxrious.com</a></p>
+                                </div>
                             </div>
+                            <p class="small mb-0">"Not the right one?"
+                                <a href="#" class="text-decoration-underline">Change
+                                    activity</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- ---------- End Create Review Area ----- -->
-
-
 
             <!-- ========= Start Footer ========= -->
             <footer class="footer border-top pt-60 bg-cover bg-img" data-bg-image="assets/images/footer/footer-bg.jpg">

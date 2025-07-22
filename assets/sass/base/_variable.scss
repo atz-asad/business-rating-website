@@ -71,7 +71,7 @@
 
 h1,
 .h1 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.3rem + 3.2vw);
 }
 
 h2,
@@ -117,6 +117,17 @@ h5,
   }
 }
 
+body {
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1440px;
@@ -134,4 +145,9 @@ h5,
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }

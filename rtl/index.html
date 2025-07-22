@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Business Rating Website">
-        <title>Business || Home One</title>
+        <title>Business || Home</title>
 
         <!-- favicon -->
         <link rel="shortcut icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
@@ -14,29 +14,18 @@
         <link rel="stylesheet" href="../assets/css/vendor/fontawesome.min.css">
         <!-- icomoon -->
         <link rel="stylesheet" href="../assets/css/icomoon/style.css">
-
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="../assets/css/vendor/swiper-bundle.min.css">
         <!-- Aos animate css -->
         <link rel="stylesheet" href="../assets/css/vendor/aos.min.css">
         <!-- Nice-select -->
         <link rel="stylesheet" href="../assets/css/vendor/nice-select.css">
-        <!-- jquery-ui -->
-        <link rel="stylesheet" href="../assets/css/vendor/jquery-ui.min.css">
         <!-- magnific Popup -->
         <link rel="stylesheet" href="../assets/css/vendor/magnific-popup.min.css">
-        <!-- daterangepicker -->
-        <link rel="stylesheet" href="../assets/css/vendor/daterangepicker.css">
-        <!-- Odometer -->
-        <link rel="stylesheet" href="../assets/css/vendor/odometer.min.css">
-        <!-- leaflet -->
-        <link rel="stylesheet" href="../assets/css/vendor/leaflet/leaflet.css">
-        <link rel="stylesheet" href="../assets/css/vendor/leaflet/MarkerCluster.css">
-        <link rel="stylesheet" href="../assets/css/vendor/leaflet/leaflet.fullscreen.css">
         <!-- select2 -->
         <link rel="stylesheet" href="../assets/css/vendor/select2.min.css">
-        <!-- datatables -->
-        <link rel="stylesheet" href="../assets/css/vendor/datatables.min.css">
+        <!-- progreesbar -->
+        <link rel="stylesheet" href="../assets/css/vendor/progressbar/jquery.rprogessbar.min.css">
         <!-- bootstrap CSS -->
         <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
 
@@ -52,13 +41,17 @@
         <div class="pages">
 
             <!-- Start preloader  -->
-            <!-- <div class="preloader">
+            <div class="preloader">
                 <div class="preloader-content">
-                    <div class="img">
-                        <img src="../assets/images/looder.gif" alt="looder">
-                    </div>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
                 </div>
-            </div> -->
+            </div>
             <!-- End preloader  -->
 
             <!--========= Start Header =========-->
@@ -78,50 +71,30 @@
 
                         <div class="collapse navbar-collapse d-xl-block d-none" id="main_nav">
                             <!-- Header menu -->
-                            <ul class="navbar-nav justify-content-center ms-auto gap-24">
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item " href="index.html">Home One </a></li>
-                                        <li><a class="dropdown-item" href="#">Home Two </a></li>
-                                        <li><a class="dropdown-item" href="#">Home Three </a></li>
-                                    </ul>
-                                </li>
+                            <ul id="mainMenu" class="navbar-nav justify-content-center ms-auto gap-24">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-                                <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                                <li class="nav-item"><a class="nav-link" href="categori.html">Categories</a></li>
                                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Vendors</a>
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href="product.html">Vendors</a></li>
-                                        <li><a class="dropdown-item" href="#">Vendors Details</a></li>
-                                    </ul>
-                                </li>
+
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
                                     <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                        <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-                                        <li><a class="dropdown-item" href="#">My Account &raquo; </a>
-                                            <ul class="submenu dropdown-menu shadow">
-                                                <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
-                                                <li><a class="dropdown-item" href="order.html">My Orders</a></li>
 
-                                                <li><a class="dropdown-item" href="order-details.html">Orders
-                                                        Details</a></li>
-                                                <li><a class="dropdown-item" href="change-password.html">Change
-                                                        Password</a></li>
-                                                <li><a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
-                                                </li>
-                                            </ul>
+                                        <li><a class="dropdown-item" href="all-rateing-grid.html">All Rateing grid</a>
                                         </li>
+                                        <li><a class="dropdown-item" href="all-rateing-list.html">All Rateing list</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="rateing-details.html">Rateing Details</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="review-create.html">Review Create</a></li>
                                         <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
                                         <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
                                         <li><a class="dropdown-item" href="faq.html">Faq</a></li>
                                         <li><a class="dropdown-item" href="404.html">404 page</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             </ul>
                             <!-- Header Buttons -->
@@ -140,24 +113,11 @@
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                             aria-expanded="false">
-                                            <i class="fal fa-user-circle"></i> Customer
+                                            <i class="fa-light fa-user-group"></i> Sign In
                                         </button>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Login</a></li>
-                                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="dropdown">
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            <i class="fa-light fa-user-group"></i> Vendor
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Login</a></li>
-                                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                                            <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -181,62 +141,8 @@
                     </a>
                 </div>
                 <div class="offcanvas-body">
-                    <nav class="main_nenu mb-40">
-                        <ul class="mobileMenu">
-                            <li class="menu-item active"><a href="javascript:void(0)">Home</a>
-                                <ul class="dropdown">
-                                    <li><a class="active" href="index.html">Home One</a> </li>
-                                    <li><a href="home-2.html">Home Two</a></li>
-                                    <li><a href="home-3.html">Home Three</a></li>
-                                </ul>
-                            </li>
+                    <nav id="mobileMenu" class="mobile-menu mb-40">
 
-                            <li class="menu-item"><a href="javascript:void(0)">Listing</a>
-                                <ul class="dropdown">
-                                    <li><a class="" href="listing-map.html">Map View</a> </li>
-                                    <li><a class="" href="listing-grid.html">Grid View</a> </li>
-                                </ul>
-                            </li>
-
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="vendor.html">Vendor</a></li>
-                            <li class="menu-item"><a href="javascript:void(0)">Shop</a>
-                                <ul class="dropdown">
-                                    <li><a class="" href="pricing.html">Product</a> </li>
-                                    <li><a class="" href="cart.html">Cart</a> </li>
-                                    <li><a class="" href="checkout.html">Checkout</a> </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="vendor-details.html">Vendor Details</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="event-details.html">Event Details</a></li>
-                                    <li><a href="service-details.html">Service Details</a></li>
-                                    <li><a href="vendor-details.html">Vendor Details</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="#">My Account</a>
-                                        <ul class="submenu">
-                                            <li><a href="dashboard.html">Dashboard</a></li>
-                                            <li><a href="order.html">My Orders</a></li>
-
-                                            <li><a href="order-details.html">Orders Details</a></li>
-                                            <li><a href="change-password.html">Change Password</a></li>
-                                            <li><a href="edit-profile.html">Edit Profile</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="signin.html">Sign In</a></li>
-                                    <li><a href="signup.html">Sign Up</a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="404.html">404 page</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="contact.html">Contact</a></li>
-                        </ul>
                     </nav>
 
                     <!-- menu-action-item-wrapper -->
@@ -266,33 +172,15 @@
                                 <span class="icon">
                                     <i class="fa-light fa-user-circle"></i>
                                 </span>
-                                My Account
+                                Sign In
                                 <span class="plus-icon"><i class="fal fa-plus"></i></span>
                             </a>
                             <ul class="setting-dropdown">
                                 <li>
-                                    <a class="menu-link" href="#">Login</a>
+                                    <a class="menu-link" href="signin.html">Sign In</a>
                                 </li>
                                 <li>
-                                    <a class="menu-link" href="#">Signup</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Vendor -->
-                        <div class="menu-action-item">
-                            <a href="javascript:void(0)">
-                                <span class="icon">
-                                    <i class="fa-light fa-user-circle"></i>
-                                </span>
-                                Vendor
-                                <span class="plus-icon"><i class="fal fa-plus"></i></span>
-                            </a>
-                            <ul class="setting-dropdown">
-                                <li>
-                                    <a class="menu-link" href="#">Login</a>
-                                </li>
-                                <li>
-                                    <a class="menu-link" href="#">Signup</a>
+                                    <a class="menu-link" href="signup.html">Sign up</a>
                                 </li>
                             </ul>
                         </div>
@@ -315,7 +203,7 @@
                                 <div class="search-box">
                                     <input type="text" class="form-control" placeholder="Search company or category">
                                     <button class="btn btn-primary" type="button">
-                                        Search <i class="fa-light fa-magnifying-glass"></i>
+                                        <span>Search</span> <i class="fa-light fa-magnifying-glass"></i>
                                     </button>
                                 </div>
                             </form>
@@ -637,8 +525,8 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="100">
-                        <div class="swiper product-slider" id="product-slider" data-slidespace="24" data-xsmview="1"
-                            data-smview="2" data-mdview="2" data-lgview="3" data-xlview="4">
+                        <div class="swiper pb-1 product-slider" id="product-slider" data-slidespace="24"
+                            data-xsmview="1" data-smview="2" data-mdview="2" data-lgview="3" data-xlview="4">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="business-card radius-lg">
@@ -697,8 +585,8 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <h6 class="mb-1 fw-medium lc-2"><a href="#">Elite Finance Digital Studio</a>
-                                            </h6>
+                                            <h4 class="mb-1 fw-medium lc-2"><a href="#">Elite Finance Digital Studio</a>
+                                            </h4>
                                             <p class="mb-2 small lc-2">Your trusted finance solution</p>
                                             <div class="review-area">
                                                 <div class="review rate">
@@ -768,14 +656,14 @@
                                         </div>
                                         <div class="content">
                                             <h6 class="mb-1 fw-medium lc-2"><a href="#">Elite Finance Digital Studio</a>
-                                                </h4>
-                                                <p class="mb-2 small lc-2">Your trusted finance solution</p>
-                                                <div class="review-area">
-                                                    <div class="review rate">
-                                                        <div class="rating" style="width:80%"></div>
-                                                    </div>
-                                                    <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </h6>
+                                            <p class="mb-2 small lc-2">Your trusted finance solution</p>
+                                            <div class="review-area">
+                                                <div class="review rate">
+                                                    <div class="rating" style="width:80%"></div>
                                                 </div>
+                                                <p class="mb-0">4.5 <span>(41)</span></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1283,28 +1171,14 @@
         <script src="../assets/js/vendor/lazysizes.min.js"></script>
         <!-- magnific popup -->
         <script src="../assets/js/vendor/jquery.magnific-popup.min.js"></script>
-        <!-- daterangepicker -->
-        <script src="../assets/js/vendor/moment.min.js"></script>
-        <script src="../assets/js/vendor/daterangepicker.min.js"></script>
         <!-- mouse hover tab -->
         <script src="../assets/js/vendor/mouse-hover-move.js"></script>
-        <!-- progressScroll -->
-        <script src="../assets/js/vendor/jquery.progressScroll.min.js"></script>
-        <!-- Countdown -->
-        <script src="../assets/js/vendor/appear.min.js"></script>
-        <script src="../assets/js/vendor/odometer.min.js"></script>
-        <!-- map -->
-        <script src="../assets/js/vendor/leaflat/leaflet.js"></script>
-        <script src="../assets/js/vendor/leaflat/leaflet.markercluster.js"></script>
-        <script src="../assets/js/vendor/leaflat/leaflet.fullscreen.min.js"></script>
         <!-- select2 -->
         <script src="../assets/js/vendor/select2.min.js"></script>
-        <!-- datatables -->
-        <script src="../assets/js/vendor/datatables.min.js"></script>
-        <!-- Map JS -->
-        <script src="../assets/js/map.js"></script>
-
-        <!-- Map JS -->
+        <!-- progressbar -->
+        <script src="../assets/js/vendor/progressbar/jQuery.rProgressbar.min.js"></script>
+        <script src="../assets/js/vendor/progressbar/jquery.waypoints.js"></script>
+        <!-- header-menu JS -->
         <script src="../assets/js/header-menu.js"></script>
         <!-- custom -->
         <script src="../assets/js/script.js"></script>
